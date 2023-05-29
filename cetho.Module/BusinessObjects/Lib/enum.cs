@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cetho.Ecosys.BusinessObjects
+namespace cetho.Module.BusinessObjects
 {
     public enum enumAcctControl
     {

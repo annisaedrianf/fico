@@ -387,24 +387,26 @@ namespace cetho.Module.BusinessObjects
      { 
        get { return _comments; } 
        set { SetPropertyValue(nameof(comments), ref _comments, value); } 
-     } 
-     // 
-     // Notes for fCompany : 
-     //private fChartOfAccts _chartofaccts; 
-     //[XafDisplayName("ChartOfAccts"), ToolTip("ChartOfAccts")] 
-     //// [Appearance("fCompanychartofaccts", Enabled = true)]
-     //// [Appearance("fCompanychartofacctsVisiblen ", Visibility = ViewItemVisibility.Hide)] 
-     //// [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
-     //// [RuleRequiredField(DefaultContexts.Save)] 
-     //// [IsSearch(true)]
-     //[Association("CompanyCOA")] 
-     //public  fChartOfAccts chartofaccts
-     //{ 
-     //  get { return _chartofaccts; } 
-     //  set { SetPropertyValue(nameof(chartofaccts), ref _chartofaccts, value); } 
-     //} 
-   
-   private void UpdateByTime() 
+     }
+
+       /// <summary>
+       /// Notes for fCompany : 
+       /// </summary>
+     private fChartOfAccts _chartofaccts;
+        [XafDisplayName("ChartOfAccts"), ToolTip("ChartOfAccts")]
+        // [Appearance("fCompanychartofaccts", Enabled = true)]
+        // [Appearance("fCompanychartofacctsVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+        // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
+        // [RuleRequiredField(DefaultContexts.Save)] 
+        // [IsSearch(true)]
+        [Association("CompanyCOA")]
+        public fChartOfAccts chartofaccts
+        {
+            get { return _chartofaccts; }
+            set { SetPropertyValue(nameof(chartofaccts), ref _chartofaccts, value); }
+        }
+
+        private void UpdateByTime() 
    { 
    string tUser = SecuritySystem.CurrentUserName.ToString(); 
    Updateby = Session.FindObject<ApplicationUser>(new BinaryOperator("UserName", tUser)); 

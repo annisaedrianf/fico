@@ -9,6 +9,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="BusinessObjects\CoA\eNumAcctsCtrlIntgration.cs" />
+    <Compile Remove="BusinessObjects\CoA\eNumPLBS.cs" />
+    <Compile Remove="BusinessObjects\Interface\enumAcctControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="Model.DesignedDiffs.xafml" />
   </ItemGroup>
   <ItemGroup>

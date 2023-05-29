@@ -75,22 +75,7 @@ namespace cetho.Module.BusinessObjects
          get { return base.Oid; }
          set { base.Oid = value; }
      }
-     // GroupProperty
-     // Notes for fTaxCategory : Notes
-     private Type _id; 
-     [XafDisplayName("Description"), ToolTip("Description")] 
-     // [Appearance("fTaxCategoryid", Enabled = true)]
-     // [Appearance("fTaxCategoryidVisiblen ", Visibility = ViewItemVisibility.Hide)] 
-     // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
-     // [RuleRequiredField(DefaultContexts.Save)] 
-     // [IsSearch(true)]
-     [Association("Assc")] 
-     public  Type id
-     { 
-       get { return _id; } 
-       set { SetPropertyValue(nameof(id), ref _id, value); } 
-     } 
-     // 
+     
      // Notes for fTaxCategory : 
      private string _taxcatgr; 
      [XafDisplayName("Tax  Category"), ToolTip("Tax  Category")] 

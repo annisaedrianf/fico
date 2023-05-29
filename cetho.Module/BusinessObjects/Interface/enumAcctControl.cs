@@ -32,7 +32,7 @@ namespace cetho.Module.BusinessObjects
    [NavigationItem("eNumAcctsControl")]
    // Standard Document
    [System.ComponentModel.DisplayName("Account")]
-   public class Enum : Account Control
+   public class Enum : AccountControl
    {
      public Enum(Session session) : base(session) 
      {
