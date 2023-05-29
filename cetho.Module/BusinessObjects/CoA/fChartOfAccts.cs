@@ -108,7 +108,7 @@ namespace cetho.Module.BusinessObjects
      // General Specification
      // Notes for fChartOfAccts : 
      private fLanguage _languagemaster; 
-     [XafDisplayName("language.Master"), ToolTip("language.Master")] 
+     [XafDisplayName("Language Master"), ToolTip("language.Master")] 
      // [Appearance("fChartOfAcctslanguagemaster", Enabled = true)]
      // [Appearance("fChartOfAcctslanguagemasterVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -122,7 +122,7 @@ namespace cetho.Module.BusinessObjects
      // General Specification
      // Notes for fChartOfAccts : 
      private int _lengthforglacctsnumber; 
-     [XafDisplayName("length for G/L Accounts number"), ToolTip("length for G/L Accounts number")] 
+     [XafDisplayName("Length for G/L Accounts Number"), ToolTip("length for G/L Accounts number")] 
      // [Appearance("fChartOfAcctslengthforglacctsnumber", Enabled = true)]
      // [Appearance("fChartOfAcctslengthforglacctsnumberVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -136,7 +136,7 @@ namespace cetho.Module.BusinessObjects
      // Integeration
      // Notes for fChartOfAccts : 
      private eNumAcctsCtrlIntgration _ctlintegration; 
-     [XafDisplayName("Controlling integeration"), ToolTip("Controlling integeration")] 
+     [XafDisplayName("Controlling Integeration"), ToolTip("Controlling integeration")] 
      // [Appearance("fChartOfAcctsctlintegration", Enabled = true)]
      // [Appearance("fChartOfAcctsctlintegrationVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

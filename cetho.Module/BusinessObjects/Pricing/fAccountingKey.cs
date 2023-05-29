@@ -1,10 +1,10 @@
-// Class Name : fTaxCategory.cs 
+// Class Name : fAccountingKey.cs 
 // Project Name : FICO 
-// Last Update : 22/05/2023 16:39:27  
+// Last Update : 29/05/2023 15:35:20  
  
 // Gen Code Version : 1.0.0.0  
  
-// Revise ==> Revice date : 22/05/2023 16:39:27 
+// Revise ==> Revice date : 29/05/2023 15:35:20 
  // Updated :   
 //======================================================================== 
  
@@ -31,10 +31,10 @@ namespace cetho.Module.BusinessObjects
    [DefaultProperty("TaxCatgr")]
    [NavigationItem("Master")]
    // Standard Document
-   [System.ComponentModel.DisplayName("Tax Category")]
-   public class fTaxCategory : XPObject
+   [System.ComponentModel.DisplayName("Change View (Account Key)")]
+   public class fAccountingKey : XPObject
    {
-     public fTaxCategory(Session session) : base(session) 
+     public fAccountingKey(Session session) : base(session) 
      {
        // This constructor is used when an object is loaded from a persistent storage.
        // Do not place any code here.
@@ -69,56 +69,41 @@ namespace cetho.Module.BusinessObjects
      public void Sync()
      {
      } 
-     [Appearance("VisiblefTaxCategoryOID", Visibility = ViewItemVisibility.Hide)] 
+     [Appearance("VisiblefAccountingKeyOID", Visibility = ViewItemVisibility.Hide)] 
      public int Oid 
      { 
          get { return base.Oid; }
          set { base.Oid = value; }
      }
-     
-     // Notes for fTaxCategory : 
-     private string _taxcatgr; 
-     [XafDisplayName("Tax  Category"), ToolTip("Tax  Category")] 
-     // [Appearance("fTaxCategorytaxcatgr", Enabled = true)]
-     // [Appearance("fTaxCategorytaxcatgrVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // 
+     // Notes for fAccountingKey : 
+     private string _actky; 
+     [XafDisplayName("Accounting Key"), ToolTip("\"Accounting Key")] 
+     // [Appearance("fAccountingKeyactky", Enabled = true)]
+     // [Appearance("fAccountingKeyactkyVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
-     [Size(10)] 
-     public  string taxcatgr
+     [Size(5)] 
+     public  string actky
      { 
-       get { return _taxcatgr; } 
-       set { SetPropertyValue(nameof(taxcatgr), ref _taxcatgr, value); } 
+       get { return _actky; } 
+       set { SetPropertyValue(nameof(actky), ref _actky, value); } 
      } 
-     // Type/Description
-     // Notes for fTaxCategory : 
-     private string _shorttext; 
-     [XafDisplayName("Short Text"), ToolTip("ShortText")] 
-     // [Appearance("fTaxCategoryshorttext", Enabled = true)]
-     // [Appearance("fTaxCategoryshorttextVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // 
+     // Notes for fAccountingKey : 
+     private string _name; 
+     [XafDisplayName("Name"), ToolTip("Name")] 
+     // [Appearance("fAccountingKeyname", Enabled = true)]
+     // [Appearance("fAccountingKeynameVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
-     [Size(30)] 
-     public  string shorttext
+     [Size(50)] 
+     public  string name
      { 
-       get { return _shorttext; } 
-       set { SetPropertyValue(nameof(shorttext), ref _shorttext, value); } 
-     } 
-     // Type/Description
-     // Notes for fTaxCategory : 
-     private string _longtext; 
-     [XafDisplayName("Long Text"), ToolTip("long Text")] 
-     // [Appearance("fTaxCategorylongtext", Enabled = true)]
-     // [Appearance("fTaxCategorylongtextVisiblen ", Visibility = ViewItemVisibility.Hide)] 
-     // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
-     // [RuleRequiredField(DefaultContexts.Save)] 
-     // [IsSearch(true)]
-     [Size(250)] 
-     public  string longtext
-     { 
-       get { return _longtext; } 
-       set { SetPropertyValue(nameof(longtext), ref _longtext, value); } 
+       get { return _name; } 
+       set { SetPropertyValue(nameof(name), ref _name, value); } 
      } 
    } 
 } 

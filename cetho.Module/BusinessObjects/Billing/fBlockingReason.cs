@@ -1,10 +1,10 @@
-// Class Name : fTaxCategory.cs 
+// Class Name : fBlockingReason.cs 
 // Project Name : FICO 
-// Last Update : 22/05/2023 16:39:27  
+// Last Update : 29/05/2023 15:38:49  
  
 // Gen Code Version : 1.0.0.0  
  
-// Revise ==> Revice date : 22/05/2023 16:39:27 
+// Revise ==> Revice date : 29/05/2023 15:38:49 
  // Updated :   
 //======================================================================== 
  
@@ -31,10 +31,10 @@ namespace cetho.Module.BusinessObjects
    [DefaultProperty("TaxCatgr")]
    [NavigationItem("Master")]
    // Standard Document
-   [System.ComponentModel.DisplayName("Tax Category")]
-   public class fTaxCategory : XPObject
+   [System.ComponentModel.DisplayName("Change View (Billing: Blocking Reasons): Overview")]
+   public class fBlockingReason : XPObject
    {
-     public fTaxCategory(Session session) : base(session) 
+     public fBlockingReason(Session session) : base(session) 
      {
        // This constructor is used when an object is loaded from a persistent storage.
        // Do not place any code here.
@@ -69,56 +69,71 @@ namespace cetho.Module.BusinessObjects
      public void Sync()
      {
      } 
-     [Appearance("VisiblefTaxCategoryOID", Visibility = ViewItemVisibility.Hide)] 
+     [Appearance("VisiblefBlockingReasonOID", Visibility = ViewItemVisibility.Hide)] 
      public int Oid 
      { 
          get { return base.Oid; }
          set { base.Oid = value; }
      }
-     
-     // Notes for fTaxCategory : 
-     private string _taxcatgr; 
-     [XafDisplayName("Tax  Category"), ToolTip("Tax  Category")] 
-     // [Appearance("fTaxCategorytaxcatgr", Enabled = true)]
-     // [Appearance("fTaxCategorytaxcatgrVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // 
+     // Notes for fBlockingReason : 
+     private string _block; 
+     [XafDisplayName("Block"), ToolTip("Block")] 
+     // [Appearance("fBlockingReasonblock", Enabled = true)]
+     // [Appearance("fBlockingReasonblockVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
-     [Size(10)] 
-     public  string taxcatgr
+     [Size(20)] 
+     public  string block
      { 
-       get { return _taxcatgr; } 
-       set { SetPropertyValue(nameof(taxcatgr), ref _taxcatgr, value); } 
+       get { return _block; } 
+       set { SetPropertyValue(nameof(block), ref _block, value); } 
      } 
-     // Type/Description
-     // Notes for fTaxCategory : 
-     private string _shorttext; 
-     [XafDisplayName("Short Text"), ToolTip("ShortText")] 
-     // [Appearance("fTaxCategoryshorttext", Enabled = true)]
-     // [Appearance("fTaxCategoryshorttextVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // 
+     // Notes for fBlockingReason : 
+     private string _block1; 
+     [XafDisplayName("Block 1"), ToolTip("Block 1")] 
+     // [Appearance("fBlockingReasonblock1", Enabled = true)]
+     // [Appearance("fBlockingReasonblock1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
-     [Size(30)] 
-     public  string shorttext
+     [Size(50)] 
+     public  string block1
      { 
-       get { return _shorttext; } 
-       set { SetPropertyValue(nameof(shorttext), ref _shorttext, value); } 
+       get { return _block1; } 
+       set { SetPropertyValue(nameof(block1), ref _block1, value); } 
      } 
-     // Type/Description
-     // Notes for fTaxCategory : 
-     private string _longtext; 
-     [XafDisplayName("Long Text"), ToolTip("long Text")] 
-     // [Appearance("fTaxCategorylongtext", Enabled = true)]
-     // [Appearance("fTaxCategorylongtextVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // 
+     // Notes for fBlockingReason : 
+     private string _billtype; 
+     [XafDisplayName("Billing Type "), ToolTip("Bill. Type ")] 
+     // [Appearance("fBlockingReasonbilltype", Enabled = true)]
+     // [Appearance("fBlockingReasonbilltypeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
-     [Size(250)] 
-     public  string longtext
+     [Size(20)] 
+     public  string billtype
      { 
-       get { return _longtext; } 
-       set { SetPropertyValue(nameof(longtext), ref _longtext, value); } 
+       get { return _billtype; } 
+       set { SetPropertyValue(nameof(billtype), ref _billtype, value); } 
+     } 
+     // 
+     // Notes for fBlockingReason : 
+     private string _billingtype; 
+     [XafDisplayName("Billing Type 1"), ToolTip("Billing Type")] 
+     // [Appearance("fBlockingReasonbillingtype", Enabled = true)]
+     // [Appearance("fBlockingReasonbillingtypeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
+     // [RuleRequiredField(DefaultContexts.Save)] 
+     // [IsSearch(true)]
+     [Size(50)] 
+     public  string billingtype
+     { 
+       get { return _billingtype; } 
+       set { SetPropertyValue(nameof(billingtype), ref _billingtype, value); } 
      } 
    } 
 } 

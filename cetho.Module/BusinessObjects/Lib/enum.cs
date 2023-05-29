@@ -62,4 +62,19 @@ namespace cetho.Module.BusinessObjects
         Material = 4
 
     }
+
+    public enum enumDelivBlock
+    {
+
+    }
+
+    public enum enumBilllBlock
+    {
+
+    }
+
+    public enum enumOrderReason
+    {
+
+    }
 }

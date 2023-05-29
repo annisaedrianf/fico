@@ -78,7 +78,7 @@ namespace cetho.Module.BusinessObjects
      // 
      // Notes for fAcctsGroup : 
      private string _acctgroup; 
-     [XafDisplayName("AcctGroup"), ToolTip("AcctGroup")] 
+     [XafDisplayName("Acct Group"), ToolTip("Acct Group")] 
      // [Appearance("fAcctsGroupacctgroup", Enabled = true)]
      // [Appearance("fAcctsGroupacctgroupVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -167,7 +167,7 @@ namespace cetho.Module.BusinessObjects
      // 
      // Notes for fAcctsGroup : 
      private object _acctsmanagemnt; 
-     [XafDisplayName("Account management"), ToolTip("Account management")] 
+     [XafDisplayName("Account Management"), ToolTip("Account Management")] 
      // [Appearance("fAcctsGroupacctsmanagemnt", Enabled = true)]
      // [Appearance("fAcctsGroupacctsmanagemntVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -181,7 +181,7 @@ namespace cetho.Module.BusinessObjects
      // 
      // Notes for fAcctsGroup : 
      private object _docentry; 
-     [XafDisplayName("Document entry"), ToolTip("Document entry")] 
+     [XafDisplayName("Document Entry"), ToolTip("Document entry")] 
      // [Appearance("fAcctsGroupdocentry", Enabled = true)]
      // [Appearance("fAcctsGroupdocentryVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -195,7 +195,7 @@ namespace cetho.Module.BusinessObjects
      // 
      // Notes for fAcctsGroup : 
      private object _bankfindetail; 
-     [XafDisplayName("Bank/financial detail"), ToolTip("Bank/financial detail")] 
+     [XafDisplayName("Bank/Financial Detail"), ToolTip("Bank/financial detail")] 
      // [Appearance("fAcctsGroupbankfindetail", Enabled = true)]
      // [Appearance("fAcctsGroupbankfindetailVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -209,7 +209,7 @@ namespace cetho.Module.BusinessObjects
      // 
      // Notes for fAcctsGroup : 
      private object _interestcalculation; 
-     [XafDisplayName("Interest calculation"), ToolTip("Interest calculation")] 
+     [XafDisplayName("Interest Calculation"), ToolTip("Interest calculation")] 
      // [Appearance("fAcctsGroupinterestcalculation", Enabled = true)]
      // [Appearance("fAcctsGroupinterestcalculationVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -223,7 +223,7 @@ namespace cetho.Module.BusinessObjects
      // 
      // Notes for fAcctsGroup : 
      private object _jointventure; 
-     [XafDisplayName("Joint venture"), ToolTip("Joint venture")] 
+     [XafDisplayName("Joint Venture"), ToolTip("Joint venture")] 
      // [Appearance("fAcctsGroupjointventure", Enabled = true)]
      // [Appearance("fAcctsGroupjointventureVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
