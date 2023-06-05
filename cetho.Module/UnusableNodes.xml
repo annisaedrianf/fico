@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="fConsignmentProcess_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="fConsignmentProcess">
+              <LayoutGroup Id="fConsignmentProcess_col1">
+                <LayoutItem Id="netval1" RelativeSize="34.95575221238938" Index="11" Removed="True" />
+                <LayoutItem Id="consignissue" RelativeSize="5.752212389380531" Index="12" Removed="True" />
+                <LayoutItem Id="volume" RelativeSize="5.752212389380531" Index="12" Removed="True" />
+                <LayoutItem Id="podate1" RelativeSize="23.451327433628318" Index="13" Removed="True" />
+                <LayoutItem Id="salesarea" RelativeSize="5.098039215686274" Index="13" Removed="True" />
+                <LayoutItem Id="totweight" RelativeSize="5.371900826446281" Index="13" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

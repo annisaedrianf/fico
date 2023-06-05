@@ -51,4 +51,9 @@
     <Folder Include="BusinessObjects\Doc\" />
     <Folder Include="BusinessObjects\Objects\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+  </ItemGroup>
 </Project>
