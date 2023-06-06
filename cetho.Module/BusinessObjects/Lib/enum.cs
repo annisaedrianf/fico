@@ -82,4 +82,39 @@ namespace cetho.Module.BusinessObjects
     {
 
     }
+
+    public enum enumBillBlock
+    {
+
+    }
+
+    public enum enumCustGrp
+    {
+
+    }
+
+    public enum enumPricDate
+    {
+
+    }
+
+    public enum enumPriceGrp
+    {
+
+    }
+
+    public enum enumPriceList
+    {
+
+    }
+
+    public enum enumUsage
+    {
+
+    }
+
+    public enum enumReasonReject
+    {
+
+    }
 }
