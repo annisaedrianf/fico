@@ -117,4 +117,9 @@ namespace cetho.Module.BusinessObjects
     {
 
     }
+
+    public enum enumTitle
+    {
+
+    }
 }

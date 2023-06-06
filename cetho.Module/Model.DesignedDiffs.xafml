@@ -2132,7 +2132,7 @@
                 <LayoutItem Id="matl" ViewItem="matl" Index="1" RelativeSize="5.752212389380531" IsNewNode="True" />
                 <LayoutItem Id="vldfrm" ViewItem="vldfrm" Index="1" RelativeSize="92.47787610619469" Removed="True" />
                 <LayoutItem Id="desc" ViewItem="desc" Index="2" RelativeSize="5.752212389380531" IsNewNode="True" />
-                <LayoutGroup Id="Auto79815e75-2044-4c34-938e-6e99b6a5dde1" ShowCaption="False" Caption="" Direction="Horizontal" Index="3" RelativeSize="80.97345132743362" IsNewNode="True">
+                <LayoutGroup Id="Auto5ca5ee76-8fbc-4373-9407-1d7f3fa1c7b8" ShowCaption="False" Caption="" Direction="Horizontal" Index="3" RelativeSize="80.97345132743362" IsNewNode="True">
                   <LayoutItem Id="vldfrm" ViewItem="vldfrm" Index="0" RelativeSize="50" IsNewNode="True" />
                   <LayoutItem Id="vldto" ViewItem="vldto" Index="1" RelativeSize="50" IsNewNode="True" />
                 </LayoutGroup>
