@@ -36,7 +36,7 @@
             <Items IsNewNode="True">
               <Item Id="fBlockingReason_ListView" ViewId="fBlockingReason_ListView" ObjectKey="" ImageName="Actions_FullScreenExit" Caption="Change View &quot;Billing: Blocking Reasons&quot;: Overview" IsNewNode="True" />
               <Item Id="fCreateBill_ListView" ViewId="fCreateBill_ListView" ObjectKey="" Caption="Create Material BOM: Initial Screen" ImageName="Actions_FullScreen" IsNewNode="True" />
-              <Item Id="fCreateSalesOrder_ListView" ViewId="fCreateSalesOrder_ListView" ObjectKey="" ImageName="Actions_FullScreen" IsNewNode="True" />
+              <Item Id="fCreateSalesOrderBill_ListView" ViewId="fCreateSalesOrderBill_ListView" ObjectKey="" ImageName="Actions_FullScreen" IsNewNode="True" />
               <Item Id="fDefineItemCategory_ListView" ViewId="fDefineItemCategory_ListView" ObjectKey="" ImageName="Actions_FullScreen" IsNewNode="True" />
             </Items>
           </Item>
@@ -53,19 +53,27 @@
           <Item Id="fConsignmentProcess_ListView" ImageName="Actions_FullScreen" Removed="True" />
           <Item Id="fCreateBill_ListView" Removed="True" />
           <Item Id="fCreateCreditMemo_ListView" Removed="True" />
+          <Item Id="fCreateCustomerMaster_ListView" Removed="True" />
+          <Item Id="fCreateCustomerMaterial_ListView" Removed="True" />
           <Item Id="fCreateDebitMemo_ListView" Removed="True" />
           <Item Id="fCreateInquiry_ListView" Removed="True" />
           <Item Id="fCreateItemProposal_ListView" Removed="True" />
+          <Item Id="fCreateMaterialMaster_ListView" Removed="True" />
+          <Item Id="fCreateMaterialStock_ListView" Removed="True" />
+          <Item Id="fCreatePartner_ListView" Removed="True" />
           <Item Id="fCreatePicking_ListView" ImageName="Lookup&amp;Reference" Removed="True" />
           <Item Id="fCreateQuotation_ListView" Removed="True" />
           <Item Id="fCreateReturn_ListView" ImageName="Actions_FullScreen" Removed="True" />
           <Item Id="fCreateSalesDocument_ListView" Removed="True" />
           <Item Id="fCreateSalesOrder_ListView" Removed="True" />
+          <Item Id="fCreateSalesOrderBill_ListView" Removed="True" />
           <Item Id="fCretaeExclusion_ListView" ImageName="Actions_FullScreen" Removed="True" />
+          <Item Id="fCustomerNumberRange_ListView" Removed="True" />
           <Item Id="fDefineItemCategory_ListView" Removed="True" />
           <Item Id="fDeterminePricing_ListView" Removed="True" />
           <Item Id="fGLAcct_ListView" ImageName="GlobalColors" />
           <Item Id="fOutputProposal_ListView" Removed="True" />
+          <Item Id="fOverviewMaterialStock_ListView" Removed="True" />
           <Item Id="fSalesDocument_ListView" Removed="True" />
           <Item Id="fScheduleLine_ListView" Removed="True" />
           <Item Id="fSubstituingReason_ListView" Removed="True" />
@@ -73,6 +81,17 @@
           <Item Id="fTaxDetermination_ListView" Removed="True" />
           <Item Id="fTextDetermination_ListView" Removed="True" />
           <Item Id="fTextType_ListView" Removed="True" />
+          <Item Id="MaterialandPlant" Caption="Material &amp; Plant" ImageName="Group" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="fCreateCustomerMaster_ListView" ViewId="fCreateCustomerMaster_ListView" ObjectKey="" ImageName="Actions_FullScreen" IsNewNode="True" />
+              <Item Id="fCreateCustomerMaterial_ListView" ViewId="fCreateCustomerMaterial_ListView" ObjectKey="" ImageName="ActionGroup_EasyTestRecorder" IsNewNode="True" />
+              <Item Id="fCreateMaterialMaster_ListView" ViewId="fCreateMaterialMaster_ListView" ObjectKey="" ImageName="BO_Product_Group" IsNewNode="True" />
+              <Item Id="fCreateMaterialStock_ListView" ViewId="fCreateMaterialStock_ListView" ObjectKey="" ImageName="NavigationOptions" IsNewNode="True" />
+              <Item Id="fCreatePartner_ListView" ViewId="fCreatePartner_ListView" ObjectKey="" ImageName="ProductQuicTopSalesperson" IsNewNode="True" />
+              <Item Id="fCustomerNumberRange_ListView" ViewId="fCustomerNumberRange_ListView" ObjectKey="" ImageName="ChartRangeArea" IsNewNode="True" />
+              <Item Id="fOverviewMaterialStock_ListView" ViewId="fOverviewMaterialStock_ListView" ObjectKey="" ImageName="ModelEditor_Navigation_Items" IsNewNode="True" />
+            </Items>
+          </Item>
           <Item Id="PackingList" Caption="Packing List" ImageName="Shopping_Package" IsNewNode="True">
             <Items IsNewNode="True">
               <Item Id="fConsignmentProcess_ListView" ViewId="fConsignmentProcess_ListView" ObjectKey="" ImageName="Actions_FullScreen" Caption="Create Sales Order: Initial Screen (Consignment Process)" IsNewNode="True" />
@@ -100,6 +119,7 @@
               <Item Id="fCreateItemProposal_ListView" ViewId="fCreateItemProposal_ListView" ObjectKey="" ImageName="Actions_FullScreen" IsNewNode="True" />
               <Item Id="fCreateQuotation_ListView" ViewId="fCreateQuotation_ListView" ObjectKey="" ImageName="Actions_FullScreen" IsNewNode="True" />
               <Item Id="fCreateSalesDocument_ListView" ViewId="fCreateSalesDocument_ListView" ObjectKey="" ImageName="ChartType_RangeBar" IsNewNode="True" />
+              <Item Id="fCreateSalesOrder_ListView" ViewId="fCreateSalesOrder_ListView" ObjectKey="" ImageName="Actions_FullScreen" IsNewNode="True" />
               <Item Id="fCretaeExclusion_ListView" ViewId="fCretaeExclusion_ListView" ImageName="Actions_FullScreen" ObjectKey="" IsNewNode="True" />
               <Item Id="fSalesDocument_ListView" ViewId="fSalesDocument_ListView" ObjectKey="" ImageName="Demo_SalesOverview" IsNewNode="True" />
               <Item Id="fScheduleLine_ListView" ViewId="fScheduleLine_ListView" ObjectKey="" ImageName="NewTableStyle" IsNewNode="True" />
@@ -1203,6 +1223,273 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <DetailView Id="fCreateCustomerMaster_DetailView">
+      <Items>
+        <PropertyEditor Id="Oid" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="fCreateCustomerMaster" Caption="Create Customer Master" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="fCreateCustomerMaster_col1" RelativeSize="100" Caption="fCreateCustomerMaster_col1">
+                <LayoutItem Id="cust" ViewItem="cust" Index="0" RelativeSize="6.0606060606060606" IsNewNode="True" />
+                <LayoutItem Id="co" RelativeSize="92.47787610619469" Index="1" Removed="True" />
+                <LayoutItem Id="distrchnl" ViewItem="distrchnl" Index="1" RelativeSize="4.377104377104377" IsNewNode="True" />
+                <LayoutItem Id="district" RelativeSize="86.72566371681415" Index="2" Removed="True" />
+                <LayoutItem Id="division" ViewItem="division" Index="2" RelativeSize="4.377104377104377" IsNewNode="True" />
+                <LayoutItem Id="floor" RelativeSize="80.97345132743362" Index="3" Removed="True" />
+                <LayoutItem Id="salesorg" ViewItem="salesorg" Index="3" RelativeSize="4.377104377104377" IsNewNode="True" />
+                <LayoutItem Id="buildcode" ViewItem="buildcode" Index="4" RelativeSize="75.22123893805309" Removed="True" />
+                <TabbedGroup Id="Item2" CaptionLocation="Top" Index="4" RelativeSize="80.8080808080808" IsNewNode="True">
+                  <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Address" Direction="Vertical" IsNewNode="True">
+                    <LayoutGroup Id="Autodc656b9d-22be-4748-a95d-86dc4af55cdb" ShowCaption="False" Caption="Autodc656b9d-22be-4748-a95d-86dc4af55cdb(11)" Direction="Horizontal" Index="0" RelativeSize="9.216589861751151" IsNewNode="True">
+                      <LayoutItem Id="buildcode" ViewItem="buildcode" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                      <LayoutItem Id="co" ViewItem="co" Index="1" RelativeSize="50.15353121801433" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto4b5437e1-ff76-4ad8-b925-ded3e820710a" ShowCaption="False" Caption="Auto4b5437e1-ff76-4ad8-b925-ded3e820710a(14)" Index="1" RelativeSize="90.78341013824885" IsNewNode="True">
+                      <LayoutItem Id="name" ViewItem="name" Index="0" RelativeSize="7.614213197969543" IsNewNode="True" />
+                      <LayoutGroup Id="Auto1285cb20-7e6e-482c-80f1-50d248874e00" ShowCaption="False" Caption="Auto1285cb20-7e6e-482c-80f1-50d248874e00(16)" Direction="Horizontal" Index="1" RelativeSize="9.644670050761421" IsNewNode="True">
+                        <LayoutItem Id="floor" ViewItem="floor" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                        <LayoutItem Id="room" ViewItem="room" Index="1" RelativeSize="50.15353121801433" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto822851f6-8e90-4ccd-8a8d-3c5fb7edb66d" ShowCaption="False" Caption="Auto822851f6-8e90-4ccd-8a8d-3c5fb7edb66d(19)" Index="2" RelativeSize="82.74111675126903" IsNewNode="True">
+                        <LayoutItem Id="district" ViewItem="district" Index="0" RelativeSize="9.202453987730062" IsNewNode="True" />
+                        <LayoutGroup Id="Autoea042301-c29f-4b99-b7de-2789546fae00" ShowCaption="False" Caption="Autoea042301-c29f-4b99-b7de-2789546fae00(21)" Direction="Horizontal" Index="1" RelativeSize="90.79754601226993" IsNewNode="True">
+                          <LayoutGroup Id="Autof68bc59f-b2c9-444a-ba00-403d1d449f35" ShowCaption="False" Caption="Autof68bc59f-b2c9-444a-ba00-403d1d449f35(22)" Index="0" RelativeSize="49.84646878198567" IsNewNode="True">
+                            <LayoutItem Id="street" ViewItem="street" Index="0" RelativeSize="11.486486486486486" IsNewNode="True" />
+                            <LayoutItem Id="street2" ViewItem="street2" Index="1" RelativeSize="8.783783783783784" IsNewNode="True" />
+                            <LayoutItem Id="street4" ViewItem="street4" Index="2" RelativeSize="8.783783783783784" IsNewNode="True" />
+                            <LayoutItem Id="title" ViewItem="title" Index="3" RelativeSize="70.94594594594595" IsNewNode="True" />
+                          </LayoutGroup>
+                          <LayoutGroup Id="Auto12069fbb-049b-4315-9707-1468ae4d85f9" ShowCaption="False" Caption="Auto12069fbb-049b-4315-9707-1468ae4d85f9(27)" Index="1" RelativeSize="50.15353121801433" IsNewNode="True">
+                            <LayoutItem Id="searchterm" ViewItem="searchterm" Index="0" RelativeSize="11.486486486486486" IsNewNode="True" />
+                            <LayoutItem Id="street3" ViewItem="street3" Index="1" RelativeSize="8.783783783783784" IsNewNode="True" />
+                            <LayoutItem Id="street5" ViewItem="street5" Index="2" RelativeSize="8.783783783783784" IsNewNode="True" />
+                            <LayoutItem Id="suupl" ViewItem="suupl" Index="3" RelativeSize="70.94594594594595" IsNewNode="True" />
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="1" Caption="Bank Data" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto279bbe28-1e02-4d51-a83b-d6d001fd12ba" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="34.10138248847926" IsNewNode="True">
+                      <LayoutGroup Id="Autoc2fc7c3a-e70c-488c-9b3f-51b331930ff1" ShowCaption="False" Caption="Autoc2fc7c3a-e70c-488c-9b3f-51b331930ff1(33)" Index="0" RelativeSize="49.84646878198567" IsNewNode="True">
+                        <LayoutItem Id="bankname" ViewItem="bankname" Index="0" RelativeSize="24.324324324324323" IsNewNode="True" />
+                        <LayoutItem Id="bankgrp" ViewItem="bankgrp" Index="1" RelativeSize="17.56756756756757" IsNewNode="True" />
+                        <LayoutItem Id="bankcountry" ViewItem="bankcountry" Index="2" RelativeSize="17.56756756756757" IsNewNode="True" />
+                        <LayoutItem Id="region" ViewItem="region" Index="3" RelativeSize="40.54054054054054" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto4ce4eecc-de8e-4048-9559-37aebc2bd6d7" ShowCaption="False" Caption="Auto4ce4eecc-de8e-4048-9559-37aebc2bd6d7(39)" Index="1" RelativeSize="50.15353121801433" IsNewNode="True">
+                        <LayoutItem Id="banknumb" ViewItem="banknumb" Index="0" RelativeSize="24.324324324324323" IsNewNode="True" />
+                        <LayoutItem Id="bankkey" ViewItem="bankkey" Index="1" RelativeSize="17.56756756756757" IsNewNode="True" />
+                        <LayoutItem Id="bankbranch" ViewItem="bankbranch" Index="2" RelativeSize="17.56756756756757" IsNewNode="True" />
+                        <LayoutItem Id="city" ViewItem="city" Index="3" RelativeSize="17.56756756756757" IsNewNode="True" />
+                        <LayoutItem Id="street1" ViewItem="street1" Index="4" RelativeSize="22.972972972972972" IsNewNode="True" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autod5ff851d-6978-4065-89c8-0c41df62425a" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="65.89861751152074" IsNewNode="True">
+                      <LayoutItem Id="swiftcode" ViewItem="swiftcode" Index="0" RelativeSize="49.94882292732856" IsNewNode="True" />
+                      <LayoutItem Id="postbankacc" ViewItem="postbankacc" Index="1" RelativeSize="50.05117707267144" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item4" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="2" Caption="Control Data" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="autho" ViewItem="autho" Index="0" RelativeSize="8.294930875576037" IsNewNode="True" />
+                    <LayoutItem Id="corgrp" ViewItem="corgrp" Index="1" RelativeSize="5.990783410138249" IsNewNode="True" />
+                    <LayoutItem Id="chkdigit" ViewItem="chkdigit" Index="2" RelativeSize="5.990783410138249" IsNewNode="True" />
+                    <LayoutGroup Id="Auto51305eef-082e-4f42-8e8e-bafc1d9a2c70" ShowCaption="False" Caption="" Direction="Horizontal" Index="3" RelativeSize="11.981566820276498" IsNewNode="True">
+                      <LayoutItem Id="transportzone" ViewItem="transportzone" Index="0" RelativeSize="49.94882292732856" IsNewNode="True" />
+                      <LayoutGroup Id="Autoaa36571b-7b29-43a3-95a4-3efa60124eb6" ShowCaption="False" Caption="" Index="1" RelativeSize="50.05117707267144" IsNewNode="True">
+                        <LayoutItem Id="trainsstation" ViewItem="trainsstation" Index="0" RelativeSize="50" IsNewNode="True" />
+                        <LayoutItem Id="expressstation" ViewItem="expressstation" Index="1" RelativeSize="50" IsNewNode="True" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto4f71e060-c8ef-4e8a-b4b5-b61a7cfe0703" ShowCaption="False" Caption="Auto4f71e060-c8ef-4e8a-b4b5-b61a7cfe0703(55)" Index="4" RelativeSize="50.23041474654378" IsNewNode="True">
+                      <LayoutGroup Id="Auto9bb3d8ee-3e9f-4284-8800-4e8251298b45" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="15.596330275229358" IsNewNode="True">
+                        <LayoutItem Id="industry" ViewItem="industry" Index="0" RelativeSize="49.94882292732856" IsNewNode="True" />
+                        <LayoutItem Id="ntrlperson" ViewItem="ntrlperson" Index="1" RelativeSize="50.05117707267144" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutItem Id="tradpartner" ViewItem="tradpartner" Index="1" RelativeSize="11.926605504587156" IsNewNode="True" />
+                      <LayoutGroup Id="Auto5cdf7d29-9647-4277-8a66-5c4f2c78229a" ShowCaption="False" Caption="Auto5cdf7d29-9647-4277-8a66-5c4f2c78229a(59)" Direction="Horizontal" Index="2" RelativeSize="31.192660550458715" IsNewNode="True">
+                        <LayoutItem Id="loccode" ViewItem="loccode" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                        <LayoutGroup Id="Autobebea66d-40ac-4a79-9daf-a7f84e71eab7" ShowCaption="False" Caption="Autobebea66d-40ac-4a79-9daf-a7f84e71eab7(61)" Index="1" RelativeSize="50.15353121801433" IsNewNode="True">
+                          <LayoutItem Id="loc1" ViewItem="loc1" Index="0" RelativeSize="50" IsNewNode="True" />
+                          <LayoutItem Id="loc2" ViewItem="loc2" Index="1" RelativeSize="50" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                      <LayoutGroup Id="Autoc59774ef-2445-4be7-9279-ee1e6e652755" ShowCaption="False" Caption="Autoc59774ef-2445-4be7-9279-ee1e6e652755(64)" Index="3" RelativeSize="41.28440366972477" Direction="Horizontal" IsNewNode="True">
+                        <LayoutGroup Id="Auto6bfe8cb5-4c27-463d-8cb8-609fc1794aaf" ShowCaption="False" Caption="" Index="0" RelativeSize="49.94882292732856" IsNewNode="True">
+                          <LayoutItem Id="taxtype" ViewItem="taxtype" Index="0" RelativeSize="33.333333333333336" IsNewNode="True" />
+                          <LayoutItem Id="equaltax" ViewItem="equaltax" Index="1" RelativeSize="66.66666666666667" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Auto7d494b32-d6f2-4c46-b66b-37a6e379a3be" ShowCaption="False" Caption="" Index="1" RelativeSize="50.05117707267144" IsNewNode="True">
+                          <LayoutItem Id="taxnumbtype" ViewItem="taxnumbtype" Index="0" RelativeSize="33.333333333333336" IsNewNode="True" />
+                          <LayoutItem Id="tax1" ViewItem="tax1" Index="1" RelativeSize="28.88888888888889" IsNewNode="True" />
+                          <LayoutItem Id="tax2" ViewItem="tax2" Index="2" RelativeSize="37.77777777777778" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutItem Id="vendor" ViewItem="vendor" Index="5" RelativeSize="17.51152073732719" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item5" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="3" Caption="Payment Transaction" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto336442a9-a4e6-4577-9b18-e475821b1e1d" ShowCaption="False" Caption="Auto336442a9-a4e6-4577-9b18-e475821b1e1d(75)" Direction="Horizontal" Index="0" RelativeSize="10.138248847926267" IsNewNode="True">
+                      <LayoutItem Id="bankkey1" ViewItem="bankkey1" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                      <LayoutItem Id="bankacc" ViewItem="bankacc" Index="1" RelativeSize="50.15353121801433" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutItem Id="city1" ViewItem="city1" Index="1" RelativeSize="89.86175115207374" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item6" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="4" Caption="Sales" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="abcclass" ViewItem="abcclass" Index="0" RelativeSize="8.294930875576037" IsNewNode="True" />
+                    <LayoutGroup Id="Autof10cf75d-7137-4e8c-a1e9-af0d8e3f4f1f" ShowCaption="False" Caption="Autof10cf75d-7137-4e8c-a1e9-af0d8e3f4f1f(81)" Direction="Horizontal" Index="1" RelativeSize="8.755760368663594" IsNewNode="True">
+                      <LayoutItem Id="acctatcust" ViewItem="acctatcust" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                      <LayoutItem Id="authogrp" ViewItem="authogrp" Index="1" RelativeSize="50.15353121801433" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto2f1ffb34-9cf8-4824-ab97-756d9adbad4a" ShowCaption="False" Caption="Auto2f1ffb34-9cf8-4824-ab97-756d9adbad4a(84)" Index="2" RelativeSize="82.94930875576037" IsNewNode="True">
+                      <LayoutGroup Id="Auto79924b87-6393-4588-8fad-4e2dfea99817" ShowCaption="False" Caption="Auto79924b87-6393-4588-8fad-4e2dfea99817(85)" Direction="Horizontal" Index="0" RelativeSize="18.88888888888889" IsNewNode="True">
+                        <LayoutItem Id="custgrp" ViewItem="custgrp" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                        <LayoutGroup Id="Auto888c3336-3a1b-4e66-9ed9-4733d054f2e5" ShowCaption="False" Caption="Auto888c3336-3a1b-4e66-9ed9-4733d054f2e5(87)" Index="1" RelativeSize="50.15353121801433" IsNewNode="True">
+                          <LayoutItem Id="custstatgrp" ViewItem="custstatgrp" Index="0" RelativeSize="50" IsNewNode="True" />
+                          <LayoutItem Id="custpricproc" ViewItem="custpricproc" Index="1" RelativeSize="50" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto7f611a05-f8b8-4bb7-a30e-3f927ddc5044" ShowCaption="False" Caption="Auto7f611a05-f8b8-4bb7-a30e-3f927ddc5044(90)" Index="1" RelativeSize="81.11111111111111" IsNewNode="True">
+                        <LayoutItem Id="itemprop" ViewItem="itemprop" Index="0" RelativeSize="10.273972602739725" IsNewNode="True" />
+                        <LayoutItem Id="exchratetype" ViewItem="exchratetype" Index="1" RelativeSize="8.904109589041095" IsNewNode="True" />
+                        <LayoutItem Id="ppcutsproc" ViewItem="ppcutsproc" Index="2" RelativeSize="8.904109589041095" IsNewNode="True" />
+                        <LayoutGroup Id="Autob5266499-364f-488c-8ae1-9b512465e7a2" ShowCaption="False" Caption="Autob5266499-364f-488c-8ae1-9b512465e7a2(94)" Direction="Horizontal" Index="3" RelativeSize="13.013698630136986" IsNewNode="True">
+                          <LayoutItem Id="uomgrp" ViewItem="uomgrp" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                          <LayoutItem Id="switchoffround" ViewItem="switchoffround" Index="1" RelativeSize="50.15353121801433" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Auto0bf637e1-e4de-4249-a7cd-f433858a309c" ShowCaption="False" Caption="Auto0bf637e1-e4de-4249-a7cd-f433858a309c(97)" Index="4" RelativeSize="58.9041095890411" IsNewNode="True">
+                          <LayoutItem Id="orderprobab" ViewItem="orderprobab" Index="0" RelativeSize="17.441860465116278" IsNewNode="True" />
+                          <LayoutGroup Id="Auto010e5cdc-112a-4b7d-871b-2b9694f6ffe5" ShowCaption="False" Caption="Auto010e5cdc-112a-4b7d-871b-2b9694f6ffe5(99)" Direction="Horizontal" Index="1" RelativeSize="39.53488372093023" IsNewNode="True">
+                            <LayoutItem Id="salesdistric" ViewItem="salesdistric" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                            <LayoutGroup Id="Autod5fdefe6-6079-407f-9380-70915e062f8e" ShowCaption="False" Caption="Autod5fdefe6-6079-407f-9380-70915e062f8e(101)" Index="1" RelativeSize="50.15353121801433" IsNewNode="True">
+                              <LayoutItem Id="salesoffice" ViewItem="salesoffice" Index="0" RelativeSize="50" IsNewNode="True" />
+                              <LayoutItem Id="salesgrp" ViewItem="salesgrp" Index="1" RelativeSize="50" IsNewNode="True" />
+                            </LayoutGroup>
+                          </LayoutGroup>
+                          <LayoutGroup Id="Auto3e43e697-0b7b-42f0-beff-aecfe9029419" ShowCaption="False" Caption="Auto3e43e697-0b7b-42f0-beff-aecfe9029419(104)" Index="2" RelativeSize="43.02325581395349" IsNewNode="True">
+                            <LayoutItem Id="currency" ViewItem="currency" Index="0" RelativeSize="40.54054054054054" IsNewNode="True" />
+                            <LayoutGroup Id="Auto087801fc-e7d0-4bbb-bf05-b81543a58607" ShowCaption="False" Caption="Auto087801fc-e7d0-4bbb-bf05-b81543a58607(106)" Direction="Horizontal" Index="1" RelativeSize="59.45945945945946" IsNewNode="True">
+                              <LayoutItem Id="pricelist" ViewItem="pricelist" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                              <LayoutItem Id="pricegrp" ViewItem="pricegrp" Index="1" RelativeSize="50.15353121801433" IsNewNode="True" />
+                            </LayoutGroup>
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+                <LayoutItem Id="name" ViewItem="name" Index="4" RelativeSize="5.752212389380531" Removed="True" />
+                <LayoutItem Id="room" RelativeSize="69.46902654867256" Index="5" Removed="True" />
+                <LayoutItem Id="searchterm" RelativeSize="63.716814159292035" Index="6" Removed="True" />
+                <LayoutItem Id="street" RelativeSize="57.9646017699115" Index="7" Removed="True" />
+                <LayoutItem Id="street2" RelativeSize="52.21238938053097" Index="8" Removed="True" />
+                <LayoutItem Id="street3" RelativeSize="46.46017699115044" Index="9" Removed="True" />
+                <LayoutItem Id="street4" RelativeSize="40.70796460176991" Index="10" Removed="True" />
+                <LayoutItem Id="street5" RelativeSize="34.95575221238938" Index="11" Removed="True" />
+                <LayoutItem Id="suupl" RelativeSize="29.20353982300885" Index="12" Removed="True" />
+                <LayoutItem Id="title" RelativeSize="23.451327433628318" Index="13" Removed="True" />
+                <LayoutItem Id="bankbranch" RelativeSize="2.888888888888889" Index="14" Removed="True" />
+                <LayoutItem Id="bankcountry" RelativeSize="5.371900826446281" Index="14" Removed="True" />
+                <LayoutItem Id="loc1" RelativeSize="5.676855895196507" Index="14" Removed="True" />
+                <LayoutItem Id="loc2" RelativeSize="5.752212389380531" Index="14" Removed="True" />
+                <LayoutItem Id="loccode" RelativeSize="17.699115044247787" Index="14" Removed="True" />
+                <LayoutItem Id="bankgrp" RelativeSize="5.098039215686274" Index="15" Removed="True" />
+                <LayoutItem Id="bankkey" RelativeSize="2.9748283752860414" Index="16" Removed="True" />
+                <LayoutItem Id="bankname" RelativeSize="3.0660377358490565" Index="16" Removed="True" />
+                <LayoutItem Id="banknumb" RelativeSize="4.850746268656716" Index="16" Removed="True" />
+                <LayoutItem Id="city" RelativeSize="3.1630170316301705" Index="17" Removed="True" />
+                <LayoutItem Id="postbankacc" RelativeSize="3.2663316582914574" Index="17" Removed="True" />
+                <LayoutItem Id="region" RelativeSize="4.6263345195729535" Index="17" Removed="True" />
+                <LayoutItem Id="chkdigit" RelativeSize="3.903903903903904" Index="18" Removed="True" />
+                <LayoutItem Id="equaltax" RelativeSize="4.0625" Index="18" Removed="True" />
+                <LayoutItem Id="expressstation" RelativeSize="4.234527687296417" Index="18" Removed="True" />
+                <LayoutItem Id="industry" RelativeSize="4.421768707482993" Index="18" Removed="True" />
+                <LayoutItem Id="street1" RelativeSize="3.3766233766233764" Index="18" Removed="True" />
+                <LayoutItem Id="swiftcode" RelativeSize="3.6211699164345403" Index="18" Removed="True" />
+                <LayoutItem Id="autho" RelativeSize="3.4946236559139785" Index="19" Removed="True" />
+                <LayoutItem Id="corgrp" RelativeSize="3.7572254335260116" Index="19" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="3.67170626349892" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="fCreateCustomerMaster_col2" RelativeSize="50.062735257214555" Caption="fCreateCustomerMaster_col2" Removed="True">
+                <LayoutItem Id="salesdistric" RelativeSize="2.8077753779697625" Index="10" Removed="True" />
+                <LayoutItem Id="salesgrp" RelativeSize="2.8077753779697625" Index="10" Removed="True" />
+                <LayoutItem Id="salesoffice" RelativeSize="71.05831533477321" Index="10" Removed="True" />
+                <LayoutItem Id="abcclass" RelativeSize="2.8077753779697625" Index="11" Removed="True" />
+                <LayoutItem Id="authogrp" RelativeSize="2.8077753779697625" Index="11" Removed="True" />
+                <LayoutItem Id="currency" RelativeSize="2.8077753779697625" Index="11" Removed="True" />
+                <LayoutItem Id="cust" RelativeSize="68.25053995680345" Index="11" Removed="True" />
+                <LayoutItem Id="custgrp" RelativeSize="2.8077753779697625" Index="11" Removed="True" />
+                <LayoutItem Id="custpricproc" RelativeSize="2.8077753779697625" Index="11" Removed="True" />
+                <LayoutItem Id="custstatgrp" RelativeSize="2.8077753779697625" Index="11" Removed="True" />
+                <LayoutItem Id="exchratetype" RelativeSize="2.8077753779697625" Index="11" Removed="True" />
+                <LayoutItem Id="switchoffround" RelativeSize="2.8077753779697625" Index="11" Removed="True" />
+                <LayoutItem Id="uomgrp" RelativeSize="2.8077753779697625" Index="11" Removed="True" />
+                <LayoutItem Id="acctatcust" RelativeSize="2.8077753779697625" Index="12" Removed="True" />
+                <LayoutItem Id="distrchnl" RelativeSize="2.8077753779697625" Index="12" Removed="True" />
+                <LayoutItem Id="division" RelativeSize="2.8077753779697625" Index="12" Removed="True" />
+                <LayoutItem Id="itemprop" RelativeSize="2.8077753779697625" Index="12" Removed="True" />
+                <LayoutItem Id="orderprobab" RelativeSize="2.8077753779697625" Index="12" Removed="True" />
+                <LayoutItem Id="ppcutsproc" RelativeSize="2.8077753779697625" Index="12" Removed="True" />
+                <LayoutItem Id="pricelist" RelativeSize="2.8077753779697625" Index="12" Removed="True" />
+                <LayoutItem Id="salesorg" RelativeSize="65.44276457883369" Index="12" Removed="True" />
+                <LayoutItem Id="pricegrp" RelativeSize="2.8077753779697625" Index="13" Removed="True" />
+                <LayoutItem Id="bankacc" RelativeSize="73.86609071274297" Removed="True" />
+                <LayoutItem Id="bankkey1" RelativeSize="2.8077753779697625" Removed="True" />
+                <LayoutItem Id="city1" RelativeSize="2.8077753779697625" Removed="True" />
+                <LayoutItem Id="ntrlperson" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="tax1" RelativeSize="96.32829373650108" Removed="True" />
+                <LayoutItem Id="tax2" RelativeSize="93.52051835853132" Removed="True" />
+                <LayoutItem Id="taxnumbtype" RelativeSize="90.71274298056156" Removed="True" />
+                <LayoutItem Id="taxtype" RelativeSize="87.9049676025918" Removed="True" />
+                <LayoutItem Id="tradpartner" RelativeSize="85.09719222462203" Removed="True" />
+                <LayoutItem Id="trainsstation" RelativeSize="82.28941684665227" Removed="True" />
+                <LayoutItem Id="transportzone" RelativeSize="79.48164146868251" Removed="True" />
+                <LayoutItem Id="vendor" RelativeSize="76.67386609071275" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="fCreateCustomerMaterial_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="fCreateCustomerMaterial" Caption="Create Customer Material" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="Auto6fa77890-8432-4041-9e6e-feb73f13beea" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="16.783216783216783" IsNewNode="True">
+                <LayoutGroup Id="Auto05667b30-1b3c-4fba-93d0-73788aacac30" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                  <LayoutGroup Id="fCreateCustomerMaterial_col1" ShowCaption="False" Index="0" RelativeSize="72.91666666666667" IsNewNode="True">
+                    <LayoutItem Id="cust" ViewItem="cust" Index="0" RelativeSize="100" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutItem Id="distrchnl" ViewItem="distrchnl" Index="1" RelativeSize="27.083333333333332" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto8a628cde-d436-416e-8939-0b8ab9f4774d" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                  <LayoutGroup Id="fCreateCustomerMaterial_col2" ShowCaption="False" Index="0" RelativeSize="72.91666666666667" IsNewNode="True">
+                    <LayoutItem Id="matno" ViewItem="matno" Index="0" RelativeSize="51.42857142857143" IsNewNode="True" />
+                    <LayoutItem Id="custmat" ViewItem="custmat" Index="1" RelativeSize="48.57142857142857" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutItem Id="salesorgnz" ViewItem="salesorgnz" Index="1" RelativeSize="27.083333333333332" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutItem Id="desc" ViewItem="desc" Index="1" RelativeSize="83.21678321678321" IsNewNode="True" />
+              <LayoutGroup Id="fCreateCustomerMaterial_col1" RelativeSize="50" Caption="fCreateCustomerMaterial_col1" Removed="True">
+                <LayoutItem Id="cust" RelativeSize="100" Index="0" />
+                <LayoutItem Id="distrchnl" RelativeSize="92.47787610619469" Index="1" Removed="True" />
+                <LayoutItem Id="salesorgnz" RelativeSize="5.752212389380531" Index="1" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="7.522123893805309" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="fCreateCustomerMaterial_col2" RelativeSize="50" Caption="fCreateCustomerMaterial_col2" Removed="True">
+                <LayoutItem Id="matno" ViewItem="matno" Index="0" RelativeSize="7.522123893805309" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="custmat" ViewItem="custmat" Index="1" RelativeSize="92.47787610619469" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="desc" RelativeSize="92.47787610619469" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <DetailView Id="fCreateDebitMemo_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
@@ -1394,6 +1681,280 @@
                 <LayoutItem Id="targetqty" RelativeSize="63.716814159292035" Removed="True" />
                 <LayoutItem Id="vlddate" RelativeSize="80.97345132743362" Removed="True" />
                 <LayoutItem Id="vldfrmdate" RelativeSize="86.72566371681415" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="fCreateMaterialMaster_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="fCreateMaterialMaster" RelativeSize="100" Direction="Vertical" Caption="Create Material Master">
+              <LayoutGroup Id="fCreateMaterialMaster_col1" RelativeSize="100" Caption="fCreateMaterialMaster_col1" Direction="Vertical">
+                <LayoutItem Id="mat" ViewItem="mat" Index="0" RelativeSize="5.405405405405405" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="baseuom" ViewItem="baseuom" Index="1" RelativeSize="3.903903903903904" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="oldmatnumb" ViewItem="oldmatnumb" Index="2" RelativeSize="3.903903903903904" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="division" ViewItem="division" Index="3" RelativeSize="3.903903903903904" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="prdctalloc" ViewItem="prdctalloc" Index="4" RelativeSize="3.903903903903904" IsNewNode="True" Removed="True" />
+                <LayoutGroup Id="Auto25523929-2391-4747-88a3-cea79ca58655" ShowCaption="False" Caption="Auto25523929-2391-4747-88a3-cea79ca58655(10)" Direction="Horizontal" Index="5" RelativeSize="10.21021021021021" IsNewNode="True">
+                  <LayoutGroup Id="Autod5bec89a-0880-4150-8e80-13a1cc445e1d" ShowCaption="False" Caption="Autod5bec89a-0880-4150-8e80-13a1cc445e1d(11)" Index="0" RelativeSize="49.85044865403788" IsNewNode="True">
+                    <LayoutItem Id="xplantmatlstatus" ViewItem="xplantmatlstatus" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="matgrp" ViewItem="matgrp" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto77f044e8-c507-434e-be65-1ea67baffdde" ShowCaption="False" Caption="Auto77f044e8-c507-434e-be65-1ea67baffdde(14)" Index="1" RelativeSize="50.14955134596212" IsNewNode="True">
+                    <LayoutItem Id="assigneffectvals" ViewItem="assigneffectvals" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="extmatlgrp" ViewItem="extmatlgrp" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="xplantmatlstatus" ViewItem="xplantmatlstatus" Index="5" RelativeSize="5.752212389380531" Removed="True" />
+                <LayoutItem Id="lab" ViewItem="lab" Index="6" RelativeSize="3.903903903903904" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="matgrp" ViewItem="matgrp" Index="6" RelativeSize="5.752212389380531" Removed="True" />
+                <LayoutItem Id="extmatlgrp" ViewItem="extmatlgrp" Index="7" RelativeSize="5.752212389380531" Removed="True" />
+                <LayoutItem Id="prodhierarcht" ViewItem="prodhierarcht" Index="7" RelativeSize="3.903903903903904" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="vldfrm" ViewItem="vldfrm" Index="8" RelativeSize="3.903903903903904" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="genitemcatgroup" ViewItem="genitemcatgroup" Index="9" RelativeSize="3.903903903903904" IsNewNode="True" Removed="True" />
+                <TabbedGroup Id="Item2" CaptionLocation="Top" Index="10" RelativeSize="53.153153153153156" IsNewNode="True">
+                  <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Costing 2" IsNewNode="True">
+                    <LayoutItem Id="matl" ViewItem="matl" Index="0" RelativeSize="11.688311688311689" IsNewNode="True" />
+                    <LayoutItem Id="plnt" ViewItem="plnt" Index="1" RelativeSize="8.441558441558442" IsNewNode="True" />
+                    <LayoutItem Id="period" ViewItem="period" Index="2" RelativeSize="8.441558441558442" IsNewNode="True" />
+                    <LayoutItem Id="pricectrl" ViewItem="pricectrl" Index="3" RelativeSize="8.441558441558442" IsNewNode="True" />
+                    <LayoutGroup Id="Auto1f882477-aab7-4aad-8b25-70bd38935bee" ShowCaption="False" Caption="" Direction="Horizontal" Index="4" RelativeSize="8.441558441558442" IsNewNode="True">
+                      <LayoutItem Id="standprice" ViewItem="standprice" Index="0" RelativeSize="49.94882292732856" IsNewNode="True" />
+                      <LayoutItem Id="movingprice" ViewItem="movingprice" Index="1" RelativeSize="50.05117707267144" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto31773754-94f7-46f3-9df0-da93d1dea0c2" ShowCaption="False" Caption="Auto31773754-94f7-46f3-9df0-da93d1dea0c2(28)" Direction="Vertical" Index="5" RelativeSize="30.51948051948052" IsNewNode="True">
+                      <LayoutGroup Id="Autodf98b526-0940-41ad-a618-06796852e656" ShowCaption="False" Caption="Autodf98b526-0940-41ad-a618-06796852e656(30)" Index="0" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
+                        <LayoutItem Id="plannprice" ViewItem="plannprice" Index="0" RelativeSize="49.94882292732856" IsNewNode="True" />
+                        <LayoutGroup Id="Autod4acb3ba-bf86-4632-b392-c4c8153dac10" ShowCaption="False" Caption="" Index="1" RelativeSize="50.05117707267144" IsNewNode="True">
+                          <LayoutItem Id="plannprice1" ViewItem="plannprice1" Index="0" RelativeSize="36.170212765957444" IsNewNode="True" />
+                          <LayoutItem Id="plannprice2" ViewItem="plannprice2" Index="1" RelativeSize="27.659574468085108" IsNewNode="True" />
+                          <LayoutItem Id="plannprice3" ViewItem="plannprice3" Index="2" RelativeSize="36.170212765957444" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoaeb6f2ee-1ea3-4c2c-b918-5dd447a3e327" ShowCaption="False" Caption="Autoaeb6f2ee-1ea3-4c2c-b918-5dd447a3e327(35)" Index="6" RelativeSize="24.025974025974026" IsNewNode="True">
+                      <LayoutItem Id="priceunit" ViewItem="priceunit" Index="0" RelativeSize="40.54054054054054" IsNewNode="True" />
+                      <LayoutGroup Id="Auto9306e3b7-366d-4528-b3d0-bc80443a250d" ShowCaption="False" Caption="Auto9306e3b7-366d-4528-b3d0-bc80443a250d(37)" Direction="Horizontal" Index="1" RelativeSize="59.45945945945946" IsNewNode="True">
+                        <LayoutItem Id="salesorderstk" ViewItem="salesorderstk" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                        <LayoutItem Id="valclass" ViewItem="valclass" Index="1" RelativeSize="50.15353121801433" IsNewNode="True" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="1" Caption="Sales: General/Plant" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="availcheck" ViewItem="availcheck" Index="0" RelativeSize="11.688311688311689" IsNewNode="True" />
+                    <LayoutGroup Id="Autof1dfc252-ef55-475c-9cdd-a2be161767fc" ShowCaption="False" Caption="Autof1dfc252-ef55-475c-9cdd-a2be161767fc(42)" Direction="Horizontal" Index="1" RelativeSize="12.337662337662337" IsNewNode="True">
+                      <LayoutItem Id="baseqty" ViewItem="baseqty" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                      <LayoutItem Id="baseuom2" ViewItem="baseuom2" Index="1" RelativeSize="50.15353121801433" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoc4b061ac-11f8-466d-b122-469a274338e2" ShowCaption="False" Caption="Autoc4b061ac-11f8-466d-b122-469a274338e2(45)" Index="2" RelativeSize="40.25974025974026" IsNewNode="True">
+                      <LayoutItem Id="batchmanage" ViewItem="batchmanage" Index="0" RelativeSize="24.193548387096776" IsNewNode="True" />
+                      <LayoutGroup Id="Auto9caa508c-874b-427c-97ed-14a862276ad0" ShowCaption="False" Caption="Auto9caa508c-874b-427c-97ed-14a862276ad0(47)" Direction="Horizontal" Index="1" RelativeSize="75.80645161290323" IsNewNode="True">
+                        <LayoutGroup Id="Autoba1f38f0-ba95-4155-becc-85a33fde20de" ShowCaption="False" Caption="Autoba1f38f0-ba95-4155-becc-85a33fde20de(48)" Index="0" RelativeSize="49.84646878198567" IsNewNode="True">
+                          <LayoutItem Id="loadgrp" ViewItem="loadgrp" Index="0" RelativeSize="36.170212765957444" IsNewNode="True" />
+                          <LayoutItem Id="netweight" ViewItem="netweight" Index="1" RelativeSize="27.659574468085108" IsNewNode="True" />
+                          <LayoutItem Id="matl2" ViewItem="matl2" Index="2" RelativeSize="36.170212765957444" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Auto8de76814-12ff-481b-b9db-698b616ebfe2" ShowCaption="False" Caption="Auto8de76814-12ff-481b-b9db-698b616ebfe2(52)" Index="1" RelativeSize="50.15353121801433" IsNewNode="True">
+                          <LayoutItem Id="transgrp" ViewItem="transgrp" Index="0" RelativeSize="36.170212765957444" IsNewNode="True" />
+                          <LayoutItem Id="grossweight" ViewItem="grossweight" Index="1" RelativeSize="27.659574468085108" IsNewNode="True" />
+                          <LayoutItem Id="plnt1" ViewItem="plnt1" Index="2" RelativeSize="36.170212765957444" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutItem Id="setuptime" ViewItem="setuptime" Index="3" RelativeSize="35.714285714285715" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item4" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="2" Caption="Sales: Sales Org. 1" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto3256b27a-2447-4b60-8fbb-db183e6de13e" ShowCaption="False" Caption="Auto3256b27a-2447-4b60-8fbb-db183e6de13e(58)" Direction="Horizontal" Index="0" RelativeSize="12.987012987012987" IsNewNode="True">
+                      <LayoutItem Id="baseuom1" ViewItem="baseuom1" Index="0" RelativeSize="49.84646878198567" IsNewNode="True" />
+                      <LayoutItem Id="uomgrp" ViewItem="uomgrp" Index="1" RelativeSize="50.15353121801433" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto3f6689d6-f0fb-4992-9c4d-0d3efa2ea3db" ShowCaption="False" Caption="Auto3f6689d6-f0fb-4992-9c4d-0d3efa2ea3db(61)" Index="1" RelativeSize="87.01298701298701" IsNewNode="True">
+                      <LayoutItem Id="delivplnt" ViewItem="delivplnt" Index="0" RelativeSize="11.194029850746269" IsNewNode="True" />
+                      <LayoutItem Id="distrchl" ViewItem="distrchl" Index="1" RelativeSize="9.701492537313433" IsNewNode="True" />
+                      <LayoutGroup Id="Auto57bbe047-11cb-4f0a-8107-2aef74f5d59d" ShowCaption="False" Caption="Auto57bbe047-11cb-4f0a-8107-2aef74f5d59d(65)" Direction="Horizontal" Index="2" RelativeSize="79.1044776119403" IsNewNode="True">
+                        <LayoutGroup Id="Autoe173acb4-9d4c-4a3c-9a7d-acdb86034cc9" ShowCaption="False" Caption="Autoe173acb4-9d4c-4a3c-9a7d-acdb86034cc9(66)" Index="0" RelativeSize="49.84646878198567" IsNewNode="True">
+                          <LayoutItem Id="dchainspecstts" ViewItem="dchainspecstts" Index="0" RelativeSize="16.037735849056602" IsNewNode="True" />
+                          <LayoutItem Id="matl1" ViewItem="matl1" Index="1" RelativeSize="12.264150943396226" IsNewNode="True" />
+                          <LayoutItem Id="salesorg" ViewItem="salesorg" Index="2" RelativeSize="71.69811320754717" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Auto298bbe43-ee40-4f32-9c53-d029adede8f0" ShowCaption="False" Caption="Auto298bbe43-ee40-4f32-9c53-d029adede8f0(70)" Index="1" RelativeSize="50.15353121801433" IsNewNode="True">
+                          <LayoutItem Id="xdistrchainstts" ViewItem="xdistrchainstts" Index="0" RelativeSize="16.037735849056602" IsNewNode="True" />
+                          <LayoutItem Id="matlgrp" ViewItem="matlgrp" Index="1" RelativeSize="12.264150943396226" IsNewNode="True" />
+                          <LayoutItem Id="salesunit" ViewItem="salesunit" Index="2" RelativeSize="12.264150943396226" IsNewNode="True" />
+                          <LayoutItem Id="cahsdisc" ViewItem="cahsdisc" Index="3" RelativeSize="59.43396226415094" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+                <LayoutItem Id="matl" ViewItem="matl" Index="10" RelativeSize="34.95575221238938" Removed="True" />
+                <LayoutItem Id="assigneffectvals" ViewItem="assigneffectvals" Index="11" RelativeSize="34.95575221238938" Removed="True" />
+                <LayoutItem Id="plnt" RelativeSize="5.752212389380531" Index="12" Removed="True" />
+                <LayoutItem Id="pricectrl" RelativeSize="29.20353982300885" Index="12" Removed="True" />
+                <LayoutItem Id="movingprice" RelativeSize="5.098039215686274" Index="13" Removed="True" />
+                <LayoutItem Id="plannprice3" RelativeSize="5.371900826446281" Index="13" Removed="True" />
+                <LayoutItem Id="priceunit" RelativeSize="5.752212389380531" Index="13" Removed="True" />
+                <LayoutItem Id="salesorderstk" RelativeSize="23.451327433628318" Index="13" Removed="True" />
+                <LayoutItem Id="period" RelativeSize="4.234527687296417" Index="14" Removed="True" />
+                <LayoutItem Id="plannprice" RelativeSize="4.421768707482993" Index="14" Removed="True" />
+                <LayoutItem Id="plannprice1" RelativeSize="4.850746268656716" Index="14" Removed="True" />
+                <LayoutItem Id="plannprice2" RelativeSize="4.6263345195729535" Index="15" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="100" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="fCreateMaterialMaster_col2" RelativeSize="50.062735257214555" Caption="fCreateMaterialMaster_col2" Removed="True">
+                <LayoutItem Id="transgrp" RelativeSize="55.85585585585586" Index="11" Removed="True" />
+                <LayoutItem Id="cahsdisc" Index="12" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="dchainspecstts" Index="12" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="delivplnt" Index="12" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="distrchl" Index="12" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="salesorg" Index="12" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="xdistrchainstts" Index="12" RelativeSize="51.951951951951955" Removed="True" />
+                <LayoutItem Id="matl1" Index="13" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="matlgrp" Index="13" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="salesunit" Index="13" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="uomgrp" Index="13" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="availcheck" RelativeSize="90.990990990991" Removed="True" />
+                <LayoutItem Id="baseqty" RelativeSize="87.08708708708708" Removed="True" />
+                <LayoutItem Id="baseuom1" Removed="True" />
+                <LayoutItem Id="baseuom2" RelativeSize="83.18318318318319" Removed="True" />
+                <LayoutItem Id="batchmanage" RelativeSize="79.27927927927928" Removed="True" />
+                <LayoutItem Id="grossweight" RelativeSize="75.37537537537537" Removed="True" />
+                <LayoutItem Id="loadgrp" RelativeSize="71.47147147147147" Removed="True" />
+                <LayoutItem Id="matl2" RelativeSize="67.56756756756756" Removed="True" />
+                <LayoutItem Id="netweight" RelativeSize="63.66366366366366" Removed="True" />
+                <LayoutItem Id="plnt1" RelativeSize="59.75975975975976" Removed="True" />
+                <LayoutItem Id="setuptime" RelativeSize="3.903903903903904" Removed="True" />
+                <LayoutItem Id="standprice" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="valclass" RelativeSize="94.89489489489489" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="fCreateMaterialStock_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="fCreateMaterialStock" Caption="Create Material Stock" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="fCreateMaterialStock_col1" RelativeSize="100" Caption="fCreateMaterialStock_col1">
+                <LayoutGroup Id="Auto83a12458-2fc7-428d-8b00-5a4a4f80fa70" ShowCaption="False" Caption="Auto83a12458-2fc7-428d-8b00-5a4a4f80fa70(5)" Direction="Horizontal" Index="0" RelativeSize="6.993006993006993" IsNewNode="True">
+                  <LayoutItem Id="docdate" ViewItem="docdate" Index="0" RelativeSize="50" IsNewNode="True" />
+                  <LayoutItem Id="postdate" ViewItem="postdate" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto8d895e56-8082-494c-97bc-83f647f37be5" ShowCaption="False" Caption="Auto8d895e56-8082-494c-97bc-83f647f37be5(8)" Index="1" RelativeSize="12.587412587412587" IsNewNode="True">
+                  <LayoutItem Id="docheadertext" ViewItem="docheadertext" Index="0" RelativeSize="41.666666666666664" IsNewNode="True" />
+                  <LayoutGroup Id="Autoc5544983-1157-4a20-b29b-7ce88b450c1d" ShowCaption="False" Caption="Autoc5544983-1157-4a20-b29b-7ce88b450c1d(10)" Direction="Horizontal" Index="1" RelativeSize="58.333333333333336" IsNewNode="True">
+                    <LayoutItem Id="grslipno" ViewItem="grslipno" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="matslip" ViewItem="matslip" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <TabbedGroup Id="Item2" CaptionLocation="Top" Index="2" RelativeSize="80.41958041958041" IsNewNode="True">
+                  <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Defaults for Document Items" Direction="Horizontal" IsNewNode="True">
+                    <LayoutGroup Id="Auto322c8ccc-2956-4e50-ae7e-5228d625b7e0" ShowCaption="False" Caption="Auto322c8ccc-2956-4e50-ae7e-5228d625b7e0(15)" Index="0" RelativeSize="49.899799599198396" IsNewNode="True">
+                      <LayoutItem Id="plant" ViewItem="plant" Index="0" RelativeSize="8.695652173913043" IsNewNode="True" />
+                      <LayoutItem Id="movetype" ViewItem="movetype" Index="1" RelativeSize="6.280193236714976" IsNewNode="True" />
+                      <LayoutItem Id="storloc" ViewItem="storloc" Index="2" RelativeSize="85.02415458937197" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autobd9b128e-c275-4f80-b4a0-791f09917632" ShowCaption="False" Caption="Autobd9b128e-c275-4f80-b4a0-791f09917632(19)" Index="1" RelativeSize="50.100200400801604" IsNewNode="True">
+                      <LayoutItem Id="suggzeroline" ViewItem="suggzeroline" Index="0" RelativeSize="8.695652173913043" IsNewNode="True" />
+                      <LayoutItem Id="reasonformove" ViewItem="reasonformove" Index="1" RelativeSize="6.280193236714976" IsNewNode="True" />
+                      <LayoutItem Id="spclstock" ViewItem="spclstock" Index="2" RelativeSize="85.02415458937197" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="1" Caption="GR/GI Slip" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="collectslip" ViewItem="collectslip" Index="0" RelativeSize="8.695652173913043" IsNewNode="True" />
+                    <LayoutGroup Id="Autoa1dcda57-98ee-449b-9673-aecc4c45d757" ShowCaption="False" Caption="Autoa1dcda57-98ee-449b-9673-aecc4c45d757(25)" Direction="Vertical" Index="1" RelativeSize="91.30434782608695" IsNewNode="True">
+                      <LayoutItem Id="indivslip" ViewItem="indivslip" Index="0" RelativeSize="8.994708994708995" IsNewNode="True" />
+                      <LayoutItem Id="indivslipinspecttext" ViewItem="indivslipinspecttext" Index="1" RelativeSize="91.005291005291" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item4" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="2" Caption="Items" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto0878dec9-a386-4a4d-b690-f3b123d4f0d3" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="14.97584541062802" IsNewNode="True">
+                      <LayoutGroup Id="Auto996cb7cb-059f-4855-8017-bdd7ab1c97df" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                        <LayoutItem Id="mat" ViewItem="mat" Index="0" RelativeSize="58.064516129032256" IsNewNode="True" />
+                        <LayoutItem Id="batch" ViewItem="batch" Index="1" RelativeSize="41.935483870967744" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto8eccc22a-1fc6-4708-b14d-4edbe88f7342" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                        <LayoutItem Id="item" ViewItem="item" Index="0" RelativeSize="58.064516129032256" IsNewNode="True" />
+                        <LayoutItem Id="plnt" ViewItem="plnt" Index="1" RelativeSize="41.935483870967744" IsNewNode="True" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autof652aacf-63d4-4aa0-9b09-b181182a4ada" ShowCaption="False" Caption="Autof652aacf-63d4-4aa0-9b09-b181182a4ada(33)" Index="1" RelativeSize="85.02415458937197" IsNewNode="True">
+                      <LayoutItem Id="qty" ViewItem="qty" Index="0" RelativeSize="9.659090909090908" IsNewNode="True" />
+                      <LayoutGroup Id="Autod7c959cb-d9ab-4562-acc5-8dcbf8bd88b2" ShowCaption="False" Caption="Autod7c959cb-d9ab-4562-acc5-8dcbf8bd88b2(36)" Direction="Horizontal" Index="1" RelativeSize="90.3409090909091" IsNewNode="True">
+                        <LayoutItem Id="sloc" ViewItem="sloc" Index="0" RelativeSize="50" IsNewNode="True" />
+                        <LayoutGroup Id="Auto7aae85a3-b100-4886-8c60-b617b91c3bbf" ShowCaption="False" Caption="Auto7aae85a3-b100-4886-8c60-b617b91c3bbf(38)" Index="1" RelativeSize="50" IsNewNode="True">
+                          <LayoutItem Id="une" ViewItem="une" Index="0" RelativeSize="10.69182389937107" IsNewNode="True" />
+                          <LayoutItem Id="print" ViewItem="print" Index="1" RelativeSize="89.30817610062893" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+                <LayoutItem Id="movetype" ViewItem="movetype" Index="2" RelativeSize="80.97345132743362" Removed="True" />
+                <LayoutItem Id="batch" RelativeSize="34.95575221238938" Removed="True" />
+                <LayoutItem Id="collectslip" RelativeSize="57.9646017699115" Removed="True" />
+                <LayoutItem Id="indivslip" RelativeSize="52.21238938053097" Removed="True" />
+                <LayoutItem Id="indivslipinspecttext" RelativeSize="46.46017699115044" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="7.522123893805309" Removed="True" />
+                <LayoutItem Id="plant" RelativeSize="86.72566371681415" Removed="True" />
+                <LayoutItem Id="print" RelativeSize="40.70796460176991" Removed="True" />
+                <LayoutItem Id="reasonformove" RelativeSize="80.97345132743362" Removed="True" />
+                <LayoutItem Id="spclstock" RelativeSize="75.22123893805309" Removed="True" />
+                <LayoutItem Id="storloc" RelativeSize="69.46902654867256" Removed="True" />
+                <LayoutItem Id="suggzeroline" RelativeSize="63.716814159292035" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="fCreateMaterialStock_col2" RelativeSize="50" Caption="fCreateMaterialStock_col2" Removed="True">
+                <LayoutItem Id="docdate" RelativeSize="63.716814159292035" Removed="True" />
+                <LayoutItem Id="docheadertext" RelativeSize="57.9646017699115" Removed="True" />
+                <LayoutItem Id="grslipno" RelativeSize="52.21238938053097" Removed="True" />
+                <LayoutItem Id="item" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="mat" RelativeSize="92.47787610619469" Removed="True" />
+                <LayoutItem Id="matslip" RelativeSize="46.46017699115044" Removed="True" />
+                <LayoutItem Id="plnt" RelativeSize="86.72566371681415" Removed="True" />
+                <LayoutItem Id="postdate" RelativeSize="40.70796460176991" Removed="True" />
+                <LayoutItem Id="qty" RelativeSize="80.97345132743362" Removed="True" />
+                <LayoutItem Id="sloc" RelativeSize="75.22123893805309" Removed="True" />
+                <LayoutItem Id="une" RelativeSize="69.46902654867256" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="fCreatePartner_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="fCreatePartner" Caption="Create Partner" RelativeSize="100" Direction="Horizontal">
+              <LayoutGroup Id="Auto54609bf1-eb2c-4f17-9b68-21f66dadf751" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="cutsmaster" ViewItem="cutsmaster" Index="0" RelativeSize="6.293706293706293" IsNewNode="True" />
+                <LayoutItem Id="delivery" ViewItem="delivery" Index="1" RelativeSize="4.545454545454546" IsNewNode="True" />
+                <LayoutItem Id="billhead" ViewItem="billhead" Index="2" RelativeSize="4.545454545454546" IsNewNode="True" />
+                <LayoutItem Id="salesdochead" ViewItem="salesdochead" Index="3" RelativeSize="84.61538461538461" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Auto34771e74-601e-4131-8143-419b0afeb3a0" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="sisacts" ViewItem="sisacts" Index="0" RelativeSize="6.293706293706293" IsNewNode="True" />
+                <LayoutItem Id="shipment" ViewItem="shipment" Index="1" RelativeSize="4.545454545454546" IsNewNode="True" />
+                <LayoutItem Id="billitem" ViewItem="billitem" Index="2" RelativeSize="4.545454545454546" IsNewNode="True" />
+                <LayoutItem Id="salesdocitem" ViewItem="salesdocitem" Index="3" RelativeSize="84.61538461538461" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="fCreatePartner_col1" RelativeSize="100" Caption="fCreatePartner_col1" Removed="True">
+                <LayoutItem Id="cutsmaster" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="salesdochead" RelativeSize="92.47787610619469" Index="1" Removed="True" />
+                <LayoutItem Id="salesdocitem" RelativeSize="86.72566371681415" Index="2" Removed="True" />
+                <LayoutItem Id="delivery" RelativeSize="80.97345132743362" Index="3" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="7.522123893805309" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="fCreatePartner_col2" RelativeSize="50" Caption="fCreatePartner_col2" Removed="True">
+                <LayoutItem Id="billhead" RelativeSize="92.47787610619469" Removed="True" />
+                <LayoutItem Id="billitem" RelativeSize="86.72566371681415" Removed="True" />
+                <LayoutItem Id="shipment" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="sisacts" RelativeSize="80.97345132743362" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
@@ -1999,55 +2560,52 @@
         <LayoutGroup Id="Main" RelativeSize="100">
           <LayoutGroup Id="SimpleEditors" RelativeSize="100">
             <LayoutGroup Id="fCreateSalesOrder" Caption="Create Sales Order" RelativeSize="100" Direction="Vertical">
-              <LayoutGroup Id="Auto308c7ee2-c3f3-406e-a02a-af620503be0d" ShowCaption="False" Caption="Auto308c7ee2-c3f3-406e-a02a-af620503be0d(4)" Direction="Horizontal" Index="0" RelativeSize="8.096280087527353" IsNewNode="True">
-                <LayoutItem Id="ponumb" ViewItem="ponumb" Index="0" RelativeSize="49.87437185929648" IsNewNode="True" />
-                <LayoutItem Id="podate" ViewItem="podate" Index="1" RelativeSize="50.12562814070352" IsNewNode="True" />
-              </LayoutGroup>
-              <LayoutGroup Id="Auto9fed7a6a-aca2-4a80-ae8a-3d1a523a1302" ShowCaption="False" Caption="Auto9fed7a6a-aca2-4a80-ae8a-3d1a523a1302(7)" Index="1" RelativeSize="91.90371991247265" IsNewNode="True">
-                <LayoutGroup Id="Auto0d1ef23a-404a-4a52-a8c4-d2d0b3a0bd63" ShowCaption="False" Caption="Auto0d1ef23a-404a-4a52-a8c4-d2d0b3a0bd63(8)" Direction="Horizontal" Index="0" RelativeSize="8.333333333333334" IsNewNode="True">
-                  <LayoutItem Id="distrchnl" ViewItem="distrchnl" Index="0" RelativeSize="49.87437185929648" IsNewNode="True" />
-                  <LayoutItem Id="division" ViewItem="division" Index="1" RelativeSize="50.12562814070352" IsNewNode="True" />
-                </LayoutGroup>
-                <LayoutGroup Id="Autod7269b09-0134-452b-b753-cb3ec14aa573" ShowCaption="False" Caption="Autod7269b09-0134-452b-b753-cb3ec14aa573(11)" Index="1" RelativeSize="91.66666666666667" IsNewNode="True">
-                  <LayoutGroup Id="Auto599bc673-4ed5-4455-bf48-ee5b97c7209a" ShowCaption="False" Caption="Auto599bc673-4ed5-4455-bf48-ee5b97c7209a(12)" Direction="Horizontal" Index="0" RelativeSize="9.090909090909092" IsNewNode="True">
-                    <LayoutItem Id="salesorgnz" ViewItem="salesorgnz" Index="0" RelativeSize="49.87437185929648" IsNewNode="True" />
-                    <LayoutItem Id="salesoffice" ViewItem="salesoffice" Index="1" RelativeSize="50.12562814070352" IsNewNode="True" />
-                  </LayoutGroup>
-                  <LayoutGroup Id="Auto47b80ae4-fd70-4795-a3c6-3fbd9c323fe4" ShowCaption="False" Caption="Auto47b80ae4-fd70-4795-a3c6-3fbd9c323fe4(15)" Index="1" RelativeSize="90.9090909090909" IsNewNode="True">
-                    <LayoutItem Id="salesgroup" ViewItem="salesgroup" Index="0" RelativeSize="8.285714285714286" IsNewNode="True" />
-                    <LayoutGroup Id="Autoc99cb328-6959-4a8f-8611-74201ebdfa48" ShowCaption="False" Caption="Autoc99cb328-6959-4a8f-8611-74201ebdfa48(17)" Direction="Horizontal" Index="1" RelativeSize="10" IsNewNode="True">
-                      <LayoutItem Id="billblock" ViewItem="billblock" Index="0" RelativeSize="49.87437185929648" IsNewNode="True" />
-                      <LayoutItem Id="billdoc" ViewItem="billdoc" Index="1" RelativeSize="50.12562814070352" IsNewNode="True" />
-                    </LayoutGroup>
-                    <LayoutGroup Id="Auto9ff11db1-530e-4d38-a1bb-0564502beb9a" ShowCaption="False" Caption="Auto9ff11db1-530e-4d38-a1bb-0564502beb9a(20)" Index="2" RelativeSize="81.71428571428571" IsNewNode="True">
-                      <LayoutGroup Id="Auto3d2edb58-bd5b-4ab0-82d4-02e885d0443a" ShowCaption="False" Caption="Auto3d2edb58-bd5b-4ab0-82d4-02e885d0443a(21)" Direction="Horizontal" Index="0" RelativeSize="12.237762237762238" IsNewNode="True">
-                        <LayoutItem Id="delivblock" ViewItem="delivblock" Index="0" RelativeSize="49.87437185929648" IsNewNode="True" />
-                        <LayoutItem Id="delivplant" ViewItem="delivplant" Index="1" RelativeSize="50.12562814070352" IsNewNode="True" />
-                      </LayoutGroup>
-                      <LayoutGroup Id="Autoeceed153-2093-456e-856d-4f6c70491616" ShowCaption="False" Caption="Autoeceed153-2093-456e-856d-4f6c70491616(24)" Index="1" RelativeSize="87.76223776223776" IsNewNode="True">
-                        <LayoutItem Id="standorder" ViewItem="standorder" Index="0" RelativeSize="11.55378486055777" IsNewNode="True" />
-                        <LayoutGroup Id="Autof20646a7-6610-4e47-9152-b57ce4cdd6d9" ShowCaption="False" Caption="Autof20646a7-6610-4e47-9152-b57ce4cdd6d9(26)" Direction="Horizontal" Index="1" RelativeSize="88.44621513944223" IsNewNode="True">
-                          <LayoutGroup Id="Autoa4c1df8a-5cf2-4c6e-9759-e12a7d323364" ShowCaption="False" Caption="Autoa4c1df8a-5cf2-4c6e-9759-e12a7d323364(27)" Index="0" RelativeSize="49.87437185929648" IsNewNode="True">
-                            <LayoutItem Id="ordertype" ViewItem="ordertype" Index="0" RelativeSize="14.414414414414415" IsNewNode="True" />
-                            <LayoutItem Id="reqdelivdate" ViewItem="reqdelivdate" Index="1" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="pricdata" ViewItem="pricdata" Index="2" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="shipparty" ViewItem="shipparty" Index="3" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="volume" ViewItem="volume" Index="4" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="incoterms" ViewItem="incoterms" Index="5" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="paytcard" ViewItem="paytcard" Index="6" RelativeSize="27.027027027027028" IsNewNode="True" />
-                          </LayoutGroup>
-                          <LayoutGroup Id="Autoe61cd9f2-afa1-4391-a58a-fa42c36ef9ff" ShowCaption="False" Caption="Autoe61cd9f2-afa1-4391-a58a-fa42c36ef9ff(35)" Index="1" RelativeSize="50.12562814070352" IsNewNode="True">
-                            <LayoutItem Id="orderreason" ViewItem="orderreason" Index="0" RelativeSize="14.414414414414415" IsNewNode="True" />
-                            <LayoutItem Id="cmpltdeliv" ViewItem="cmpltdeliv" Index="1" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="expdate" ViewItem="expdate" Index="2" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="soldparty" ViewItem="soldparty" Index="3" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="netval" ViewItem="netval" Index="4" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="totweight" ViewItem="totweight" Index="5" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="cardverifcode" ViewItem="cardverifcode" Index="6" RelativeSize="11.711711711711711" IsNewNode="True" />
-                            <LayoutItem Id="paytterms" ViewItem="paytterms" Index="7" RelativeSize="15.315315315315315" IsNewNode="True" />
-                          </LayoutGroup>
+              <LayoutGroup Id="Auto9fed7a6a-aca2-4a80-ae8a-3d1a523a1302" ShowCaption="False" Caption="Auto9fed7a6a-aca2-4a80-ae8a-3d1a523a1302(7)" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="Autod7269b09-0134-452b-b753-cb3ec14aa573" ShowCaption="False" Caption="Autod7269b09-0134-452b-b753-cb3ec14aa573(11)" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutGroup Id="Auto47b80ae4-fd70-4795-a3c6-3fbd9c323fe4" ShowCaption="False" Caption="Auto47b80ae4-fd70-4795-a3c6-3fbd9c323fe4(15)" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto9ff11db1-530e-4d38-a1bb-0564502beb9a" ShowCaption="False" Caption="Auto9ff11db1-530e-4d38-a1bb-0564502beb9a(20)" Index="0" RelativeSize="100" IsNewNode="True">
+                      <LayoutItem Id="standorder" ViewItem="standorder" Index="0" RelativeSize="6.293706293706293" IsNewNode="True" />
+                      <LayoutItem Id="netval" ViewItem="netval" Index="1" RelativeSize="4.545454545454546" IsNewNode="True" />
+                      <LayoutGroup Id="Autoae9d4780-5357-4d86-aa43-356f289226c5" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="9.090909090909092" IsNewNode="True">
+                        <LayoutGroup Id="Autoc71cfa91-48e5-44d3-b546-38fa1f31436a" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                          <LayoutItem Id="ponumb" ViewItem="ponumb" Index="0" RelativeSize="50" IsNewNode="True" />
+                          <LayoutItem Id="shipparty" ViewItem="shipparty" Index="1" RelativeSize="50" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Auto578a4c41-5a3e-4f25-814a-1bbe96ebba40" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                          <LayoutItem Id="podate" ViewItem="podate" Index="0" RelativeSize="50" IsNewNode="True" />
+                          <LayoutItem Id="soldparty" ViewItem="soldparty" Index="1" RelativeSize="50" IsNewNode="True" />
                         </LayoutGroup>
                       </LayoutGroup>
+                      <TabbedGroup Id="Item2" CaptionLocation="Top" Index="3" RelativeSize="80.06993006993007" IsNewNode="True">
+                        <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Sales" IsNewNode="True">
+                          <LayoutItem Id="billblock" ViewItem="billblock" Index="0" RelativeSize="8.737864077669903" IsNewNode="True" />
+                          <LayoutGroup Id="Auto5f2a9126-7437-4f3f-b9b8-2f45b657cefc" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="12.62135922330097" IsNewNode="True">
+                            <LayoutGroup Id="Auto792dd0a8-02fb-4e45-96ac-960441e2ec42" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                              <LayoutItem Id="delivblock" ViewItem="delivblock" Index="0" RelativeSize="50" IsNewNode="True" />
+                              <LayoutItem Id="reqdelivdate" ViewItem="reqdelivdate" Index="1" RelativeSize="50" IsNewNode="True" />
+                            </LayoutGroup>
+                            <LayoutItem Id="cmpltdlv" ViewItem="cmpltdlv" Index="1" RelativeSize="50" IsNewNode="True" />
+                          </LayoutGroup>
+                          <LayoutGroup Id="Auto2d60fc25-edbe-4d2b-9a97-37eb3550b9e0" ShowCaption="False" Caption="" Index="2" RelativeSize="78.64077669902913" IsNewNode="True">
+                            <LayoutItem Id="delivplnt" ViewItem="delivplnt" Index="0" RelativeSize="8.024691358024691" IsNewNode="True" />
+                            <LayoutItem Id="orderreason" ViewItem="orderreason" Index="1" RelativeSize="8.024691358024691" IsNewNode="True" />
+                            <LayoutGroup Id="Auto83fa8f40-d425-491f-9d5e-98766b51613c" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="83.95061728395062" IsNewNode="True">
+                              <LayoutGroup Id="Auto34474ab2-9144-4000-80f3-04b74d6fb42f" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                                <LayoutItem Id="paytterms" ViewItem="paytterms" Index="0" RelativeSize="9.558823529411764" IsNewNode="True" />
+                                <LayoutItem Id="pricdate" ViewItem="pricdate" Index="1" RelativeSize="9.558823529411764" IsNewNode="True" />
+                                <LayoutItem Id="paytcard" ViewItem="paytcard" Index="2" RelativeSize="9.558823529411764" IsNewNode="True" />
+                                <LayoutItem Id="totweight" ViewItem="totweight" Index="3" RelativeSize="71.32352941176471" IsNewNode="True" />
+                              </LayoutGroup>
+                              <LayoutGroup Id="Auto0988d9e1-ddb2-46d3-a576-b34343acbeda" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                                <LayoutItem Id="incoterms" ViewItem="incoterms" Index="0" RelativeSize="9.558823529411764" IsNewNode="True" />
+                                <LayoutItem Id="expdate" ViewItem="expdate" Index="1" RelativeSize="9.558823529411764" IsNewNode="True" />
+                                <LayoutItem Id="cardverifcode" ViewItem="cardverifcode" Index="2" RelativeSize="9.558823529411764" IsNewNode="True" />
+                                <LayoutItem Id="volume" ViewItem="volume" Index="3" RelativeSize="71.32352941176471" IsNewNode="True" />
+                              </LayoutGroup>
+                            </LayoutGroup>
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </TabbedGroup>
                     </LayoutGroup>
                   </LayoutGroup>
                 </LayoutGroup>
@@ -2083,6 +2641,101 @@
                 <LayoutItem Id="reqdelivdate" RelativeSize="100" Removed="True" />
                 <LayoutItem Id="totweight" RelativeSize="46.46017699115044" Removed="True" />
                 <LayoutItem Id="volume" RelativeSize="40.70796460176991" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="fCreateSalesOrderBill_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="fCreateSalesOrderBill" Caption="Create Sales Order Bill" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="fCreateSalesOrderBill_col1" RelativeSize="100" Caption="fCreateSalesOrderBill_col1">
+                <LayoutItem Id="ordertype" RelativeSize="6.293706293706293" Index="0" />
+                <LayoutItem Id="billdoc" ViewItem="billdoc" Index="1" RelativeSize="4.545454545454546" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="salesorgnz" RelativeSize="92.47787610619469" Index="1" Removed="True" />
+                <LayoutItem Id="distrchnl" RelativeSize="86.72566371681415" Index="2" Removed="True" />
+                <TabbedGroup Id="Item2" CaptionLocation="Top" Index="2" RelativeSize="89.16083916083916" IsNewNode="True">
+                  <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Standard Order 2000958" IsNewNode="True">
+                    <LayoutItem Id="standorder" ViewItem="standorder" Index="0" RelativeSize="7.758620689655173" IsNewNode="True" />
+                    <LayoutGroup Id="Auto09d4723d-fc1e-4369-bdf4-18fa4cf3a7ac" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="5.603448275862069" IsNewNode="True">
+                      <LayoutItem Id="shipparty" ViewItem="shipparty" Index="0" RelativeSize="50" IsNewNode="True" />
+                      <LayoutItem Id="soldparty" ViewItem="soldparty" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autob5d6ee3d-3fca-4d8b-95f4-982f80dadbfe" ShowCaption="False" Caption="" Index="2" RelativeSize="86.63793103448276" IsNewNode="True">
+                      <LayoutItem Id="netval" ViewItem="netval" Index="0" RelativeSize="6.467661691542289" IsNewNode="True" />
+                      <LayoutGroup Id="Auto7fbbdfbd-4a4e-4198-895c-23da48504957" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="93.53233830845771" IsNewNode="True">
+                        <LayoutItem Id="ponumb" ViewItem="ponumb" Index="0" RelativeSize="50" IsNewNode="True" />
+                        <LayoutItem Id="podate" ViewItem="podate" Index="1" RelativeSize="50" IsNewNode="True" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="1" Caption="Organizational Data" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto3f6291d5-15d4-44dd-a9bd-2ec4603a90e6" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="7.758620689655173" IsNewNode="True">
+                      <LayoutItem Id="division" ViewItem="division" Index="0" RelativeSize="50" IsNewNode="True" />
+                      <LayoutItem Id="distrchnl" ViewItem="distrchnl" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutItem Id="salesgroup" ViewItem="salesgroup" Index="1" RelativeSize="5.603448275862069" IsNewNode="True" />
+                    <LayoutItem Id="salesorgnz" ViewItem="salesorgnz" Index="2" RelativeSize="5.603448275862069" IsNewNode="True" />
+                    <LayoutItem Id="salesoffice" ViewItem="salesoffice" Index="3" RelativeSize="81.03448275862068" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item4" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="2" Caption="Sales" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="billblock" ViewItem="billblock" Index="0" RelativeSize="7.758620689655173" IsNewNode="True" />
+                    <LayoutGroup Id="Auto90cee479-6fb4-4724-ab8d-6597af3891c7" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="11.206896551724139" IsNewNode="True">
+                      <LayoutGroup Id="Auto037df738-eb25-4800-9b97-4b57d76506c6" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                        <LayoutItem Id="delivblock" ViewItem="delivblock" Index="0" RelativeSize="50" IsNewNode="True" />
+                        <LayoutItem Id="reqdelivdate" ViewItem="reqdelivdate" Index="1" RelativeSize="50" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutItem Id="cmpltdeliv" ViewItem="cmpltdeliv" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto87aa69db-4de2-4e52-bf12-7ec575fc18fc" ShowCaption="False" Caption="" Index="2" RelativeSize="81.03448275862068" IsNewNode="True">
+                      <LayoutItem Id="delivplant" ViewItem="delivplant" Index="0" RelativeSize="6.914893617021277" IsNewNode="True" />
+                      <LayoutItem Id="orderreason" ViewItem="orderreason" Index="1" RelativeSize="6.914893617021277" IsNewNode="True" />
+                      <LayoutGroup Id="Autocb15509b-9670-4306-b268-71b032f6f83c" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="86.17021276595744" IsNewNode="True">
+                        <LayoutGroup Id="Auto7b8ba74c-93b2-4dac-a302-b404fcc038be" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                          <LayoutItem Id="totweight" ViewItem="totweight" Index="0" RelativeSize="8.024691358024691" IsNewNode="True" />
+                          <LayoutItem Id="incoterms" ViewItem="incoterms" Index="1" RelativeSize="8.024691358024691" IsNewNode="True" />
+                          <LayoutItem Id="pricdata" ViewItem="pricdata" Index="2" RelativeSize="8.024691358024691" IsNewNode="True" />
+                          <LayoutItem Id="paytcard" ViewItem="paytcard" Index="3" RelativeSize="75.92592592592592" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Autocebb9fc9-5a85-4f3a-99f1-7de3ec80fe14" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                          <LayoutItem Id="volume" ViewItem="volume" Index="0" RelativeSize="8.024691358024691" IsNewNode="True" />
+                          <LayoutItem Id="paytterms" ViewItem="paytterms" Index="1" RelativeSize="8.024691358024691" IsNewNode="True" />
+                          <LayoutItem Id="expdate" ViewItem="expdate" Index="2" RelativeSize="8.024691358024691" IsNewNode="True" />
+                          <LayoutItem Id="cardverifcode" ViewItem="cardverifcode" Index="3" RelativeSize="75.92592592592592" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+                <LayoutItem Id="standorder" ViewItem="standorder" Index="2" RelativeSize="86.72566371681415" Removed="True" />
+                <LayoutItem Id="division" RelativeSize="80.97345132743362" Index="3" Removed="True" />
+                <LayoutItem Id="salesoffice" RelativeSize="75.22123893805309" Index="4" Removed="True" />
+                <LayoutItem Id="salesgroup" RelativeSize="69.46902654867256" Index="5" Removed="True" />
+                <LayoutItem Id="soldparty" RelativeSize="52.21238938053097" Index="8" Removed="True" />
+                <LayoutItem Id="shipparty" RelativeSize="46.46017699115044" Index="9" Removed="True" />
+                <LayoutItem Id="ponumb" RelativeSize="40.70796460176991" Index="10" Removed="True" />
+                <LayoutItem Id="netval" RelativeSize="34.95575221238938" Index="11" Removed="True" />
+                <LayoutItem Id="podate" RelativeSize="29.20353982300885" Index="12" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="7.522123893805309" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="fCreateSalesOrderBill_col2" RelativeSize="50" Caption="fCreateSalesOrderBill_col2" Removed="True">
+                <LayoutItem Id="pricdata" RelativeSize="40.70796460176991" Index="10" Removed="True" />
+                <LayoutItem Id="expdate" RelativeSize="34.95575221238938" Index="11" Removed="True" />
+                <LayoutItem Id="billblock" RelativeSize="80.97345132743362" Removed="True" />
+                <LayoutItem Id="cardverifcode" RelativeSize="69.46902654867256" Removed="True" />
+                <LayoutItem Id="cmpltdeliv" RelativeSize="92.47787610619469" Removed="True" />
+                <LayoutItem Id="delivblock" RelativeSize="86.72566371681415" Removed="True" />
+                <LayoutItem Id="delivplant" RelativeSize="52.21238938053097" Removed="True" />
+                <LayoutItem Id="incoterms" RelativeSize="23.451327433628318" Removed="True" />
+                <LayoutItem Id="orderreason" RelativeSize="57.9646017699115" Removed="True" />
+                <LayoutItem Id="paytcard" RelativeSize="75.22123893805309" Removed="True" />
+                <LayoutItem Id="paytterms" RelativeSize="63.716814159292035" Removed="True" />
+                <LayoutItem Id="reqdelivdate" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="totweight" RelativeSize="46.46017699115044" Removed="True" />
+                <LayoutItem Id="volume" RelativeSize="5.752212389380531" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
@@ -2183,6 +2836,48 @@
                 <LayoutItem Id="Updateby" RelativeSize="81.22270742358079" Removed="True" />
                 <LayoutItem Id="Updatedate" RelativeSize="75.54585152838428" Removed="True" />
                 <LayoutItem Id="validuntil" RelativeSize="92.5764192139738" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="fCustomerNumberRange_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="fCustomerNumberRange" Caption="Customer Number Range" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="fCustomerNumberRange_col1" RelativeSize="100">
+                <LayoutItem Id="nrobj" RelativeSize="6.293706293706293" Index="0" />
+                <LayoutItem Id="name" ViewItem="name" Index="1" RelativeSize="4.545454545454546" IsNewNode="True" />
+                <LayoutGroup Id="Autodf9794bf-9d0e-4381-9caf-f7deac9b5f06" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="4.545454545454546" IsNewNode="True">
+                  <LayoutItem Id="grp" ViewItem="grp" Index="0" RelativeSize="50" IsNewNode="True" />
+                  <LayoutItem Id="numbrange" ViewItem="numbrange" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="fromnumb" RelativeSize="80.97345132743362" Index="3" Removed="True" />
+                <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Index="3" RelativeSize="84.61538461538461" Caption="Intervals" Direction="Vertical" IsNewNode="True">
+                  <LayoutItem Id="no" ViewItem="no" Index="0" RelativeSize="8.108108108108109" IsNewNode="True" />
+                  <LayoutGroup Id="Auto959161b2-1cd1-43e4-bd2a-a29b5d214f35" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="91.89189189189189" IsNewNode="True">
+                    <LayoutGroup Id="Auto4b0fe04f-0776-4393-a69e-9d33f80bf789" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="currnumb" ViewItem="currnumb" Index="0" RelativeSize="6.372549019607843" IsNewNode="True" />
+                      <LayoutItem Id="fromnumb" ViewItem="fromnumb" Index="1" RelativeSize="93.62745098039215" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoeffd1873-28a2-4e80-a813-2fbe7086cc6c" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="ext" ViewItem="ext" Index="0" RelativeSize="6.372549019607843" IsNewNode="True" />
+                      <LayoutItem Id="tonumb" ViewItem="tonumb" Index="1" RelativeSize="93.62745098039215" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="no" ViewItem="no" Index="3" RelativeSize="80.97345132743362" Removed="True" />
+                <LayoutItem Id="tonumb" RelativeSize="75.22123893805309" Index="4" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="7.522123893805309" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="fCustomerNumberRange_col2" RelativeSize="50" Caption="fCustomerNumberRange_col2" Removed="True">
+                <LayoutItem Id="currnumb" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="ext" RelativeSize="92.47787610619469" Removed="True" />
+                <LayoutItem Id="grp" RelativeSize="86.72566371681415" Removed="True" />
+                <LayoutItem Id="name" RelativeSize="80.97345132743362" Removed="True" />
+                <LayoutItem Id="numbrange" RelativeSize="75.22123893805309" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
@@ -2888,6 +3583,91 @@
                 <LayoutItem Id="timing3" RelativeSize="69.46902654867256" Removed="True" />
                 <LayoutItem Id="timing4" RelativeSize="63.716814159292035" Removed="True" />
                 <LayoutItem Id="transmedium" RelativeSize="100" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="fOverviewMaterialStock_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="fOverviewMaterialStock" Caption="Overview Material Stock" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="fOverviewMaterialStock_col1" RelativeSize="100" Caption="fOverviewMaterialStock_col1" Direction="Vertical">
+                <LayoutGroup Id="Auto3ffb857e-fe05-4741-93ed-bd2a8c9238d9" ShowCaption="False" Caption="Auto3ffb857e-fe05-4741-93ed-bd2a8c9238d9(5)" Direction="Horizontal" Index="0" RelativeSize="8.849557522123893" IsNewNode="True">
+                  <LayoutItem Id="mat" ViewItem="mat" Index="0" RelativeSize="50" IsNewNode="True" />
+                  <LayoutItem Id="mattype" ViewItem="mattype" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="uom" ViewItem="uom" Index="1" RelativeSize="5.752212389380531" IsNewNode="True" />
+                <TabbedGroup Id="Item2" CaptionLocation="Top" Index="2" RelativeSize="85.39823008849558" IsNewNode="True">
+                  <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Database Selection" Direction="Vertical" IsNewNode="True">
+                    <LayoutGroup Id="Autodaa24ea4-a936-43ab-9ba7-d17f25fc9b0b" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="19.29824561403509" IsNewNode="True">
+                      <LayoutGroup Id="Autoc5696683-2daa-4084-a887-f3c9e65a2b32" ShowCaption="False" Caption="Autoc5696683-2daa-4084-a887-f3c9e65a2b32(11)" Index="0" RelativeSize="49.87437185929648" IsNewNode="True">
+                        <LayoutItem Id="mat1" ViewItem="mat1" Index="0" RelativeSize="100" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto33d5b6d8-d0a3-489c-bb99-19938f8b46b9" ShowCaption="False" Caption="Auto33d5b6d8-d0a3-489c-bb99-19938f8b46b9(14)" Index="1" RelativeSize="50.12562814070352" IsNewNode="True">
+                        <LayoutItem Id="batch1" ViewItem="batch1" Index="0" RelativeSize="51.515151515151516" IsNewNode="True" />
+                        <LayoutItem Id="plant" ViewItem="plant" Index="1" RelativeSize="48.484848484848484" IsNewNode="True" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto2c8dcd5c-d756-41e4-b623-d861ee1f6154" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="80.70175438596492" IsNewNode="True">
+                      <LayoutItem Id="storloc1" ViewItem="storloc1" Index="0" RelativeSize="50" IsNewNode="True" />
+                      <LayoutItem Id="to1" ViewItem="to1" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Direction="Horizontal" Index="1" Caption="List Display" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto2e659ee9-9bf8-4e4e-beb4-f3df813fcd3e" ShowCaption="False" Caption="Auto2e659ee9-9bf8-4e4e-beb4-f3df813fcd3e(19)" Index="0" RelativeSize="49.87437185929648" IsNewNode="True">
+                      <LayoutItem Id="dsplyvers" ViewItem="dsplyvers" Index="0" RelativeSize="9.941520467836257" IsNewNode="True" />
+                      <LayoutItem Id="dsplyuom" ViewItem="dsplyuom" Index="1" RelativeSize="7.60233918128655" IsNewNode="True" />
+                      <LayoutItem Id="spclstockindic" ViewItem="spclstockindic" Index="2" RelativeSize="82.45614035087719" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto50500ec5-892a-4d0d-ac4b-4fe70136305d" ShowCaption="False" Caption="Auto50500ec5-892a-4d0d-ac4b-4fe70136305d(23)" Index="1" RelativeSize="50.12562814070352" IsNewNode="True">
+                      <LayoutItem Id="decplcasunit" ViewItem="decplcasunit" Index="0" RelativeSize="9.941520467836257" IsNewNode="True" />
+                      <LayoutItem Id="nozerostcklines" ViewItem="nozerostcklines" Index="1" RelativeSize="7.60233918128655" IsNewNode="True" />
+                      <LayoutItem Id="to" ViewItem="to" Index="2" RelativeSize="82.45614035087719" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item4" ShowCaption="True" CaptionLocation="Top" Direction="Horizontal" Index="2" Caption="Selestion of Display Levels" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Autocd0661df-5437-41f5-9bfe-fca9b7f399ec" ShowCaption="False" Caption="Autocd0661df-5437-41f5-9bfe-fca9b7f399ec(28)" Index="0" RelativeSize="49.87437185929648" IsNewNode="True">
+                      <LayoutItem Id="compcode" ViewItem="compcode" Index="0" RelativeSize="9.941520467836257" IsNewNode="True" />
+                      <LayoutItem Id="batch" ViewItem="batch" Index="1" RelativeSize="7.60233918128655" IsNewNode="True" />
+                      <LayoutItem Id="plnt" ViewItem="plnt" Index="2" RelativeSize="82.45614035087719" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto7ac5f020-94c3-4ea4-adca-ab0f1d1b0c58" ShowCaption="False" Caption="Auto7ac5f020-94c3-4ea4-adca-ab0f1d1b0c58(32)" Index="1" RelativeSize="50.12562814070352" IsNewNode="True">
+                      <LayoutItem Id="storloc" ViewItem="storloc" Index="0" RelativeSize="9.941520467836257" IsNewNode="True" />
+                      <LayoutItem Id="spclstock" ViewItem="spclstock" Index="1" RelativeSize="90.05847953216374" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item5" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="3" Caption="Stock Type Selections" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="slctspclstock" ViewItem="slctspclstock" Index="0" RelativeSize="9.941520467836257" IsNewNode="True" />
+                    <LayoutItem Id="slctstockcommit" ViewItem="slctstockcommit" Index="1" RelativeSize="90.05847953216374" IsNewNode="True" />
+                  </LayoutGroup>
+                </TabbedGroup>
+                <LayoutItem Id="mat1" ViewItem="mat1" Index="2" RelativeSize="86.72566371681415" Removed="True" />
+                <LayoutItem Id="batch1" RelativeSize="86.72566371681415" Removed="True" />
+                <LayoutItem Id="decplcasunit" RelativeSize="63.716814159292035" Removed="True" />
+                <LayoutItem Id="dsplyuom" RelativeSize="57.9646017699115" Removed="True" />
+                <LayoutItem Id="dsplyvers" RelativeSize="52.21238938053097" Removed="True" />
+                <LayoutItem Id="nozerostcklines" RelativeSize="46.46017699115044" Removed="True" />
+                <LayoutItem Id="Oid" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="plant" RelativeSize="80.97345132743362" Removed="True" />
+                <LayoutItem Id="spclstockindic" RelativeSize="40.70796460176991" Removed="True" />
+                <LayoutItem Id="storloc1" RelativeSize="75.22123893805309" Removed="True" />
+                <LayoutItem Id="to1" RelativeSize="69.46902654867256" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="fOverviewMaterialStock_col2" RelativeSize="73.10513447432763" Caption="fOverviewMaterialStock_col2" Removed="True">
+                <LayoutItem Id="batch" RelativeSize="75.22123893805309" Removed="True" />
+                <LayoutItem Id="compcode" RelativeSize="69.46902654867256" Removed="True" />
+                <LayoutItem Id="mat" RelativeSize="92.47787610619469" Removed="True" />
+                <LayoutItem Id="mattype" RelativeSize="86.72566371681415" Removed="True" />
+                <LayoutItem Id="plnt" RelativeSize="63.716814159292035" Removed="True" />
+                <LayoutItem Id="slctspclstock" RelativeSize="46.46017699115044" Removed="True" />
+                <LayoutItem Id="slctstockcommit" RelativeSize="40.70796460176991" Removed="True" />
+                <LayoutItem Id="spclstock" RelativeSize="57.9646017699115" Removed="True" />
+                <LayoutItem Id="storloc" RelativeSize="52.21238938053097" Removed="True" />
+                <LayoutItem Id="to" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="uom" RelativeSize="80.97345132743362" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>

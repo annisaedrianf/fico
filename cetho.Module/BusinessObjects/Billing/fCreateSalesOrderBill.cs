@@ -1,10 +1,10 @@
-// Class Name : fCreateSalesOrder.cs 
+// Class Name : fCreateSalesOrderBill.cs 
 // Project Name : FICO 
-// Last Update : 29/05/2023 15:51:15  
+// Last Update : 06/06/2023 14:39:18  
  
 // Gen Code Version : 1.0.0.0  
  
-// Revise ==> Revice date : 29/05/2023 15:51:15 
+// Revise ==> Revice date : 06/06/2023 14:39:18 
  // Updated :   
 //======================================================================== 
  
@@ -31,10 +31,10 @@ namespace cetho.Module.BusinessObjects
    [DefaultProperty("TaxCatgr")]
    [NavigationItem("Master")]
    // Standard Document
-   [System.ComponentModel.DisplayName("Create Sales Order: Initial Screen")]
-   public class fCreateSalesOrder : XPObject
+   [System.ComponentModel.DisplayName("Create Sales Order Bill: Initial Screen")]
+   public class fCreateSalesOrderBill : XPObject
    {
-     public fCreateSalesOrder(Session session) : base(session) 
+     public fCreateSalesOrderBill(Session session) : base(session) 
      {
        // This constructor is used when an object is loaded from a persistent storage.
        // Do not place any code here.
@@ -69,18 +69,18 @@ namespace cetho.Module.BusinessObjects
      public void Sync()
      {
      } 
-     [Appearance("VisiblefCreateSalesOrderOID", Visibility = ViewItemVisibility.Hide)] 
+     [Appearance("VisiblefCreateSalesOrderBillOID", Visibility = ViewItemVisibility.Hide)] 
      public int Oid 
      { 
          get { return base.Oid; }
          set { base.Oid = value; }
      }
      // 
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _ordertype; 
      [XafDisplayName("Order Type"), ToolTip("Order Type")] 
-     // [Appearance("fCreateSalesOrderordertype", Enabled = true)]
-     // [Appearance("fCreateSalesOrderordertypeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillordertype", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillordertypeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -91,11 +91,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(ordertype), ref _ordertype, value); } 
      } 
      // Organizational Data
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _salesorgnz; 
      [XafDisplayName("Sales Organization"), ToolTip("Sales Organization")] 
-     // [Appearance("fCreateSalesOrdersalesorgnz", Enabled = true)]
-     // [Appearance("fCreateSalesOrdersalesorgnzVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillsalesorgnz", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillsalesorgnzVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -106,11 +106,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(salesorgnz), ref _salesorgnz, value); } 
      } 
      // Organizational Data
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _distrchnl; 
      [XafDisplayName("Distribution Channel"), ToolTip("Distribution Channel")] 
-     // [Appearance("fCreateSalesOrderdistrchnl", Enabled = true)]
-     // [Appearance("fCreateSalesOrderdistrchnlVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBilldistrchnl", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBilldistrchnlVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -121,11 +121,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(distrchnl), ref _distrchnl, value); } 
      } 
      // Organizational Data
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _division; 
      [XafDisplayName("Division"), ToolTip("Division")] 
-     // [Appearance("fCreateSalesOrderdivision", Enabled = true)]
-     // [Appearance("fCreateSalesOrderdivisionVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBilldivision", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBilldivisionVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -136,11 +136,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(division), ref _division, value); } 
      } 
      // Organizational Data
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _salesoffice; 
      [XafDisplayName("Sales Office"), ToolTip("Sales Office")] 
-     // [Appearance("fCreateSalesOrdersalesoffice", Enabled = true)]
-     // [Appearance("fCreateSalesOrdersalesofficeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillsalesoffice", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillsalesofficeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -151,11 +151,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(salesoffice), ref _salesoffice, value); } 
      } 
      // Organizational Data
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _salesgroup; 
      [XafDisplayName("Sales Group"), ToolTip("Sales Group")] 
-     // [Appearance("fCreateSalesOrdersalesgroup", Enabled = true)]
-     // [Appearance("fCreateSalesOrdersalesgroupVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillsalesgroup", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillsalesgroupVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -166,11 +166,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(salesgroup), ref _salesgroup, value); } 
      } 
      // BillDoc
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _billdoc; 
      [XafDisplayName("Billing Document"), ToolTip("Billing Document")] 
-     // [Appearance("fCreateSalesOrderbilldoc", Enabled = true)]
-     // [Appearance("fCreateSalesOrderbilldocVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillbilldoc", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillbilldocVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -181,11 +181,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(billdoc), ref _billdoc, value); } 
      } 
      // Change Standard Order 2000958: Overview
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _standorder; 
      [XafDisplayName("Standard Order"), ToolTip("Standard Order")] 
-     // [Appearance("fCreateSalesOrderstandorder", Enabled = true)]
-     // [Appearance("fCreateSalesOrderstandorderVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillstandorder", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillstandorderVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -196,11 +196,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(standorder), ref _standorder, value); } 
      } 
      // Change Standard Order 2000958: Overview
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _soldparty; 
      [XafDisplayName("Sold-To Party"), ToolTip("Sold-To Party")] 
-     // [Appearance("fCreateSalesOrdersoldparty", Enabled = true)]
-     // [Appearance("fCreateSalesOrdersoldpartyVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillsoldparty", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillsoldpartyVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -211,11 +211,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(soldparty), ref _soldparty, value); } 
      } 
      // Change Standard Order 2000958: Overview
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _shipparty; 
      [XafDisplayName("Ship-To Party"), ToolTip("Ship-To Party")] 
-     // [Appearance("fCreateSalesOrdershipparty", Enabled = true)]
-     // [Appearance("fCreateSalesOrdershippartyVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillshipparty", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillshippartyVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -226,11 +226,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(shipparty), ref _shipparty, value); } 
      } 
      // Change Standard Order 2000958: Overview
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _ponumb; 
      [XafDisplayName("PO Number"), ToolTip("PO Number")] 
-     // [Appearance("fCreateSalesOrderponumb", Enabled = true)]
-     // [Appearance("fCreateSalesOrderponumbVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillponumb", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillponumbVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -241,11 +241,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(ponumb), ref _ponumb, value); } 
      } 
      // Change Standard Order 2000958: Overview
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private double _netval; 
      [XafDisplayName("Net Value"), ToolTip("Net Value")] 
-     // [Appearance("fCreateSalesOrdernetval", Enabled = true)]
-     // [Appearance("fCreateSalesOrdernetvalVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillnetval", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillnetvalVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -255,11 +255,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(netval), ref _netval, value); } 
      } 
      // Change Standard Order 2000958: Overview
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private DateTime _podate; 
      [XafDisplayName("PO Date"), ToolTip("PO Date")] 
-     // [Appearance("fCreateSalesOrderpodate", Enabled = true)]
-     // [Appearance("fCreateSalesOrderpodateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillpodate", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillpodateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -269,11 +269,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(podate), ref _podate, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private DateTime _reqdelivdate; 
      [XafDisplayName("Req. Deliv Date"), ToolTip("Req. deliv date")] 
-     // [Appearance("fCreateSalesOrderreqdelivdate", Enabled = true)]
-     // [Appearance("fCreateSalesOrderreqdelivdateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillreqdelivdate", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillreqdelivdateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -283,11 +283,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(reqdelivdate), ref _reqdelivdate, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private bool _cmpltdeliv; 
      [XafDisplayName("Complete Deliv"), ToolTip("Complete deliv")] 
-     // [Appearance("fCreateSalesOrdercmpltdeliv", Enabled = true)]
-     // [Appearance("fCreateSalesOrdercmpltdelivVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillcmpltdeliv", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillcmpltdelivVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -297,11 +297,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(cmpltdeliv), ref _cmpltdeliv, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private enumDelivBlock _delivblock; 
      [XafDisplayName("Delivery Block"), ToolTip("Delivery block")] 
-     // [Appearance("fCreateSalesOrderdelivblock", Enabled = true)]
-     // [Appearance("fCreateSalesOrderdelivblockVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBilldelivblock", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBilldelivblockVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -311,11 +311,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(delivblock), ref _delivblock, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private enumBilllBlock _billblock; 
      [XafDisplayName("Billing Block"), ToolTip("Billing block")] 
-     // [Appearance("fCreateSalesOrderbillblock", Enabled = true)]
-     // [Appearance("fCreateSalesOrderbillblockVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillbillblock", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillbillblockVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -325,11 +325,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(billblock), ref _billblock, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _paytcard; 
      [XafDisplayName("Payment Card"), ToolTip("Payment card")] 
-     // [Appearance("fCreateSalesOrderpaytcard", Enabled = true)]
-     // [Appearance("fCreateSalesOrderpaytcardVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillpaytcard", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillpaytcardVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -340,11 +340,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(paytcard), ref _paytcard, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _cardverifcode; 
      [XafDisplayName("Card Verif. Code"), ToolTip("Card Verif. Code")] 
-     // [Appearance("fCreateSalesOrdercardverifcode", Enabled = true)]
-     // [Appearance("fCreateSalesOrdercardverifcodeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillcardverifcode", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillcardverifcodeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -355,11 +355,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(cardverifcode), ref _cardverifcode, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _paytterms; 
      [XafDisplayName("Payment Terms"), ToolTip("Payment terms")] 
-     // [Appearance("fCreateSalesOrderpaytterms", Enabled = true)]
-     // [Appearance("fCreateSalesOrderpayttermsVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillpaytterms", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillpayttermsVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -370,11 +370,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(paytterms), ref _paytterms, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private enumOrderReason _orderreason; 
      [XafDisplayName("Order Reason"), ToolTip("Order reason")] 
-     // [Appearance("fCreateSalesOrderorderreason", Enabled = true)]
-     // [Appearance("fCreateSalesOrderorderreasonVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillorderreason", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillorderreasonVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -384,11 +384,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(orderreason), ref _orderreason, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _delivplant; 
-     [XafDisplayName("Deliver Plant"), ToolTip("Deliver.Plant")] 
-     // [Appearance("fCreateSalesOrderdelivplant", Enabled = true)]
-     // [Appearance("fCreateSalesOrderdelivplantVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     [XafDisplayName("Deliver. Plant"), ToolTip("Deliver.Plant")] 
+     // [Appearance("fCreateSalesOrderBilldelivplant", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBilldelivplantVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -399,11 +399,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(delivplant), ref _delivplant, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private double _totweight; 
      [XafDisplayName("Total Weight"), ToolTip("Total Weight")] 
-     // [Appearance("fCreateSalesOrdertotweight", Enabled = true)]
-     // [Appearance("fCreateSalesOrdertotweightVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBilltotweight", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBilltotweightVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -413,11 +413,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(totweight), ref _totweight, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private double _volume; 
      [XafDisplayName("Volume"), ToolTip("Volume")] 
-     // [Appearance("fCreateSalesOrdervolume", Enabled = true)]
-     // [Appearance("fCreateSalesOrdervolumeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillvolume", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillvolumeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -427,11 +427,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(volume), ref _volume, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private DateTime _pricdata; 
      [XafDisplayName("Pricing Date"), ToolTip("Pricing date")] 
-     // [Appearance("fCreateSalesOrderpricdata", Enabled = true)]
-     // [Appearance("fCreateSalesOrderpricdataVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillpricdata", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillpricdataVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -441,11 +441,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(pricdata), ref _pricdata, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private DateTime _expdate; 
      [XafDisplayName("Exp. Date "), ToolTip("Exp. Date ")] 
-     // [Appearance("fCreateSalesOrderexpdate", Enabled = true)]
-     // [Appearance("fCreateSalesOrderexpdateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillexpdate", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillexpdateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]
@@ -455,11 +455,11 @@ namespace cetho.Module.BusinessObjects
        set { SetPropertyValue(nameof(expdate), ref _expdate, value); } 
      } 
      // Sales
-     // Notes for fCreateSalesOrder : 
+     // Notes for fCreateSalesOrderBill : 
      private string _incoterms; 
      [XafDisplayName("Incoterms"), ToolTip("Incoterms")] 
-     // [Appearance("fCreateSalesOrderincoterms", Enabled = true)]
-     // [Appearance("fCreateSalesOrderincotermsVisiblen ", Visibility = ViewItemVisibility.Hide)] 
+     // [Appearance("fCreateSalesOrderBillincoterms", Enabled = true)]
+     // [Appearance("fCreateSalesOrderBillincotermsVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
      // [RuleRequiredField(DefaultContexts.Save)] 
      // [IsSearch(true)]

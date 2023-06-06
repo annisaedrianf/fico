@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="fCreateSalesOrder_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="fCreateSalesOrder">
+              <LayoutGroup Id="Auto9fed7a6a-aca2-4a80-ae8a-3d1a523a1302">
+                <LayoutGroup Id="Autod7269b09-0134-452b-b753-cb3ec14aa573">
+                  <LayoutGroup Id="Auto47b80ae4-fd70-4795-a3c6-3fbd9c323fe4">
+                    <LayoutGroup Id="Auto9ff11db1-530e-4d38-a1bb-0564502beb9a">
+                      <LayoutGroup Id="Autoeceed153-2093-456e-856d-4f6c70491616">
+                        <LayoutGroup Id="Autof20646a7-6610-4e47-9152-b57ce4cdd6d9">
+                          <LayoutGroup Id="Autoe61cd9f2-afa1-4391-a58a-fa42c36ef9ff">
+                            <LayoutItem Id="cmpltdeliv" ViewItem="cmpltdeliv" />
+                          </LayoutGroup>
+                          <LayoutGroup Id="Autoa4c1df8a-5cf2-4c6e-9759-e12a7d323364">
+                            <LayoutItem Id="pricdata" ViewItem="pricdata" />
+                            <LayoutItem Id="ordertype" ViewItem="ordertype" />
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto3d2edb58-bd5b-4ab0-82d4-02e885d0443a">
+                        <LayoutItem Id="delivplant" ViewItem="delivplant" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoc99cb328-6959-4a8f-8611-74201ebdfa48">
+                      <LayoutItem Id="billdoc" ViewItem="billdoc" />
+                    </LayoutGroup>
+                    <LayoutItem Id="salesgroup" ViewItem="salesgroup" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto599bc673-4ed5-4455-bf48-ee5b97c7209a">
+                    <LayoutItem Id="salesoffice" ViewItem="salesoffice" />
+                    <LayoutItem Id="salesorgnz" ViewItem="salesorgnz" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Auto0d1ef23a-404a-4a52-a8c4-d2d0b3a0bd63">
+                  <LayoutItem Id="division" ViewItem="division" />
+                  <LayoutItem Id="distrchnl" ViewItem="distrchnl" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

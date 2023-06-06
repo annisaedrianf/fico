@@ -122,4 +122,24 @@ namespace cetho.Module.BusinessObjects
     {
 
     }
+
+    public enum enumIncoterms
+    {
+
+    }
+
+    public enum enumLang
+    {
+
+    }
+
+    public enum enumDocType
+    {
+
+    }
+
+    public enum enumDC
+    {
+
+    }
 }

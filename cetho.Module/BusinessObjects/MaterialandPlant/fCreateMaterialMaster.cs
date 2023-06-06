@@ -580,7 +580,7 @@ namespace cetho.Module.BusinessObjects
      // Sales: General/Plant
      // Notes for fCreateMaterialMaster : 
      private string _plnt1; 
-     [XafDisplayName("Plant (Sales)"), ToolTip("Plant (Sales)")] 
+     [XafDisplayName("Plant (General)"), ToolTip("Plant (Sales)")] 
      // [Appearance("fCreateMaterialMasterplnt1", Enabled = true)]
      // [Appearance("fCreateMaterialMasterplnt1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

@@ -93,7 +93,7 @@ namespace cetho.Module.BusinessObjects
      // Address
      // Notes for fCreateCustomerMaster : 
      private string _co; 
-     [XafDisplayName("c/o"), ToolTip("c/o")] 
+     [XafDisplayName("C/O"), ToolTip("c/o")] 
      // [Appearance("fCreateCustomerMasterco", Enabled = true)]
      // [Appearance("fCreateCustomerMastercoVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
