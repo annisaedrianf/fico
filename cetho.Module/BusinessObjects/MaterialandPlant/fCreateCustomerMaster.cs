@@ -23,7 +23,6 @@ using System.Text;
 using System.Threading.Tasks; 
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Editors;
-using cetho.Module.BusinessObjects;
 
 namespace cetho.Module.BusinessObjects 
 { 
@@ -94,7 +93,7 @@ namespace cetho.Module.BusinessObjects
      // Address
      // Notes for fCreateCustomerMaster : 
      private string _co; 
-     [XafDisplayName("C/O"), ToolTip("c/o")] 
+     [XafDisplayName("c/o"), ToolTip("c/o")] 
      // [Appearance("fCreateCustomerMasterco", Enabled = true)]
      // [Appearance("fCreateCustomerMastercoVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -169,7 +168,7 @@ namespace cetho.Module.BusinessObjects
      // Address
      // Notes for fCreateCustomerMaster : 
      private string _searchterm; 
-     [XafDisplayName("Search Term 1/2"), ToolTip("Search term 1/2")] 
+     [XafDisplayName("Search term 1/2"), ToolTip("Search term 1/2")] 
      // [Appearance("fCreateCustomerMastersearchterm", Enabled = true)]
      // [Appearance("fCreateCustomerMastersearchtermVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -184,7 +183,7 @@ namespace cetho.Module.BusinessObjects
      // Address
      // Notes for fCreateCustomerMaster : 
      private string _street; 
-     [XafDisplayName("Street/House Number"), ToolTip("Street/House number")] 
+     [XafDisplayName("Street/House number"), ToolTip("Street/House number")] 
      // [Appearance("fCreateCustomerMasterstreet", Enabled = true)]
      // [Appearance("fCreateCustomerMasterstreetVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -316,7 +315,7 @@ namespace cetho.Module.BusinessObjects
      // Bank Data
      // Notes for fCreateCustomerMaster : 
      private fBank _bankgrp; 
-     [XafDisplayName("Bank Group"), ToolTip("Bank group")] 
+     [XafDisplayName("Bank group"), ToolTip("Bank group")] 
      // [Appearance("fCreateCustomerMasterbankgrp", Enabled = true)]
      // [Appearance("fCreateCustomerMasterbankgrpVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -429,7 +428,7 @@ namespace cetho.Module.BusinessObjects
      // Bank Data
      // Notes for fCreateCustomerMaster : 
      private string _swiftcode; 
-     [XafDisplayName("SWIFT Code"), ToolTip("SWIFTcode")] 
+     [XafDisplayName("SWIFTcode"), ToolTip("SWIFTcode")] 
      // [Appearance("fCreateCustomerMasterswiftcode", Enabled = true)]
      // [Appearance("fCreateCustomerMasterswiftcodeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -459,7 +458,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private string _chkdigit; 
-     [XafDisplayName("Check Digit"), ToolTip("Check digit")] 
+     [XafDisplayName("Check digit"), ToolTip("Check digit")] 
      // [Appearance("fCreateCustomerMasterchkdigit", Enabled = true)]
      // [Appearance("fCreateCustomerMasterchkdigitVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -489,7 +488,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private bool _equaltax; 
-     [XafDisplayName("Equalizatn Tax"), ToolTip("Equalizatn tax")] 
+     [XafDisplayName("Equalizatn tax"), ToolTip("Equalizatn tax")] 
      // [Appearance("fCreateCustomerMasterequaltax", Enabled = true)]
      // [Appearance("fCreateCustomerMasterequaltaxVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -503,7 +502,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private string _expressstation; 
-     [XafDisplayName("Express Station"), ToolTip("Express station")] 
+     [XafDisplayName("Express station"), ToolTip("Express station")] 
      // [Appearance("fCreateCustomerMasterexpressstation", Enabled = true)]
      // [Appearance("fCreateCustomerMasterexpressstationVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -533,7 +532,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private string _loc1; 
-     [XafDisplayName("Location No. 1"), ToolTip("Location no. 1")] 
+     [XafDisplayName("Location no. 1"), ToolTip("Location no. 1")] 
      // [Appearance("fCreateCustomerMasterloc1", Enabled = true)]
      // [Appearance("fCreateCustomerMasterloc1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -548,7 +547,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private string _loc2; 
-     [XafDisplayName("Location No. 2"), ToolTip("Location no. 2")] 
+     [XafDisplayName("Location no. 2"), ToolTip("Location no. 2")] 
      // [Appearance("fCreateCustomerMasterloc2", Enabled = true)]
      // [Appearance("fCreateCustomerMasterloc2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -563,7 +562,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private string _loccode; 
-     [XafDisplayName("Location Code"), ToolTip("Location code")] 
+     [XafDisplayName("Location code"), ToolTip("Location code")] 
      // [Appearance("fCreateCustomerMasterloccode", Enabled = true)]
      // [Appearance("fCreateCustomerMasterloccodeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -578,7 +577,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private bool _ntrlperson; 
-     [XafDisplayName("Natural Person"), ToolTip("Natural person")] 
+     [XafDisplayName("Natural person"), ToolTip("Natural person")] 
      // [Appearance("fCreateCustomerMasterntrlperson", Enabled = true)]
      // [Appearance("fCreateCustomerMasterntrlpersonVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -622,7 +621,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private string _taxnumbtype; 
-     [XafDisplayName("Tax Number Type"), ToolTip("Tax number type")] 
+     [XafDisplayName("Tax number type"), ToolTip("Tax number type")] 
      // [Appearance("fCreateCustomerMastertaxnumbtype", Enabled = true)]
      // [Appearance("fCreateCustomerMastertaxnumbtypeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -637,7 +636,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private string _taxtype; 
-     [XafDisplayName("Tax Type"), ToolTip("Tax type")] 
+     [XafDisplayName("Tax type"), ToolTip("Tax type")] 
      // [Appearance("fCreateCustomerMastertaxtype", Enabled = true)]
      // [Appearance("fCreateCustomerMastertaxtypeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -667,7 +666,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private string _trainsstation; 
-     [XafDisplayName("Train Station"), ToolTip("Train station")] 
+     [XafDisplayName("Train station"), ToolTip("Train station")] 
      // [Appearance("fCreateCustomerMastertrainsstation", Enabled = true)]
      // [Appearance("fCreateCustomerMastertrainsstationVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -682,7 +681,7 @@ namespace cetho.Module.BusinessObjects
      // Control Data
      // Notes for fCreateCustomerMaster : 
      private string _transportzone; 
-     [XafDisplayName("Transport Zone"), ToolTip("Transportzone")] 
+     [XafDisplayName("Transportzone"), ToolTip("Transportzone")] 
      // [Appearance("fCreateCustomerMastertransportzone", Enabled = true)]
      // [Appearance("fCreateCustomerMastertransportzoneVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -707,20 +706,6 @@ namespace cetho.Module.BusinessObjects
      { 
        get { return _vendor; } 
        set { SetPropertyValue(nameof(vendor), ref _vendor, value); } 
-     } 
-     // Payment Transactions
-     // Notes for fCreateCustomerMaster : 
-     private  _acchold; 
-     [XafDisplayName("Acct Holder"), ToolTip("Acct Holder")] 
-     // [Appearance("fCreateCustomerMasteracchold", Enabled = true)]
-     // [Appearance("fCreateCustomerMasteraccholdVisiblen ", Visibility = ViewItemVisibility.Hide)] 
-     // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
-     // [RuleRequiredField(DefaultContexts.Save)] 
-     // [IsSearch(true)]
-     public   acchold
-     { 
-       get { return _acchold; } 
-       set { SetPropertyValue(nameof(acchold), ref _acchold, value); } 
      } 
      // Payment Transactions
      // Notes for fCreateCustomerMaster : 
