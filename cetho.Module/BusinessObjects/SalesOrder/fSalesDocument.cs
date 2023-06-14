@@ -93,7 +93,7 @@ namespace cetho.Module.BusinessObjects
      // Change Inquiry 10000023: Header Data
      // Notes for fSalesDocument : 
      private string _inqtype2; 
-     [XafDisplayName("Inquiry Type (Header)"), ToolTip("Inquiry Type (Header)")] 
+     [XafDisplayName("Inquiry Type "), ToolTip("Inquiry Type ")] 
      // [Appearance("fSalesDocumentinqtype2", Enabled = true)]
      // [Appearance("fSalesDocumentinqtype2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -343,7 +343,7 @@ namespace cetho.Module.BusinessObjects
      // Sales
      // Notes for fSalesDocument : 
      private string _inqtype1; 
-     [XafDisplayName("Inquiry Type (Sales)"), ToolTip("Inquiry Type (Sales)")] 
+     [XafDisplayName("Inquiry Type "), ToolTip("Inquiry Type ")] 
      // [Appearance("fSalesDocumentinqtype1", Enabled = true)]
      // [Appearance("fSalesDocumentinqtype1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -400,7 +400,7 @@ namespace cetho.Module.BusinessObjects
      // Sales
      // Notes for fSalesDocument : 
      private enumPricDate _pricedate1; 
-     [XafDisplayName("Pricing Date (Sales)"), ToolTip("Pricing date (Sales)")] 
+     [XafDisplayName("Pricing Date "), ToolTip("Pricing date ")] 
      // [Appearance("fSalesDocumentpricedate1", Enabled = true)]
      // [Appearance("fSalesDocumentpricedate1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -487,7 +487,7 @@ namespace cetho.Module.BusinessObjects
      // Sales
      // Notes for fSalesDocument : 
      private string _salesgroup1; 
-     [XafDisplayName("Sales Group (Sales)"), ToolTip("Sales Group (Sales)")] 
+     [XafDisplayName("Sales Group "), ToolTip("Sales Group ")] 
      // [Appearance("fSalesDocumentsalesgroup1", Enabled = true)]
      // [Appearance("fSalesDocumentsalesgroup1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -502,7 +502,7 @@ namespace cetho.Module.BusinessObjects
      // Sales
      // Notes for fSalesDocument : 
      private string _salesoffice1; 
-     [XafDisplayName("Sales Office (Sales)"), ToolTip("Sales Office (Sales)")] 
+     [XafDisplayName("Sales Office "), ToolTip("Sales Office ")] 
      // [Appearance("fSalesDocumentsalesoffice1", Enabled = true)]
      // [Appearance("fSalesDocumentsalesoffice1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -517,7 +517,7 @@ namespace cetho.Module.BusinessObjects
      // Sales
      // Notes for fSalesDocument : 
      private enumUsage _usage1; 
-     [XafDisplayName("Usage (Sales)"), ToolTip("Usage (Sales)")] 
+     [XafDisplayName("Usage "), ToolTip("Usage ")] 
      // [Appearance("fSalesDocumentusage1", Enabled = true)]
      // [Appearance("fSalesDocumentusage1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -765,7 +765,7 @@ namespace cetho.Module.BusinessObjects
      // Schedule lines
      // Notes for fSalesDocument : 
      private string _orderqty1; 
-     [XafDisplayName("Order Quantity (Sch.)"), ToolTip("Order Quantity (Sch.)")] 
+     [XafDisplayName("Order Quantity "), ToolTip("Order Quantity ")] 
      // [Appearance("fSalesDocumentorderqty1", Enabled = true)]
      // [Appearance("fSalesDocumentorderqty1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

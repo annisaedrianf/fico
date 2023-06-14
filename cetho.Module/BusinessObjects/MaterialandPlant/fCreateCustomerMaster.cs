@@ -724,7 +724,7 @@ namespace cetho.Module.BusinessObjects
      // Payment Transactions
      // Notes for fCreateCustomerMaster : 
      private fBank _bankkey1; 
-     [XafDisplayName("Bank Key (Pymt)"), ToolTip("Bank Key (Pymt)")] 
+     [XafDisplayName("Bank Key "), ToolTip("Bank Key ")] 
      // [Appearance("fCreateCustomerMasterbankkey1", Enabled = true)]
      // [Appearance("fCreateCustomerMasterbankkey1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -738,7 +738,7 @@ namespace cetho.Module.BusinessObjects
      // Payment Transactions
      // Notes for fCreateCustomerMaster : 
      private fCountry _city1; 
-     [XafDisplayName("City (Pymt)"), ToolTip("City (Pymt)")] 
+     [XafDisplayName("City "), ToolTip("City ")] 
      // [Appearance("fCreateCustomerMastercity1", Enabled = true)]
      // [Appearance("fCreateCustomerMastercity1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

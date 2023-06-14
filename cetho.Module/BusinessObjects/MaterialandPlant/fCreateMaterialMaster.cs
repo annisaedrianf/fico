@@ -490,7 +490,7 @@ namespace cetho.Module.BusinessObjects
      // Sales: General/Plant
      // Notes for fCreateMaterialMaster : 
      private string _baseuom2; 
-     [XafDisplayName("Base Unit of Measure (General)"), ToolTip("Base Unit of Measure (General)")] 
+     [XafDisplayName("Base Unit of Measure "), ToolTip("Base Unit of Measure ")] 
      // [Appearance("fCreateMaterialMasterbaseuom2", Enabled = true)]
      // [Appearance("fCreateMaterialMasterbaseuom2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -550,7 +550,7 @@ namespace cetho.Module.BusinessObjects
      // Sales: General/Plant
      // Notes for fCreateMaterialMaster : 
      private string _matl2; 
-     [XafDisplayName("Material (General)"), ToolTip("Material (General)")] 
+     [XafDisplayName("Material "), ToolTip("Material ")] 
      // [Appearance("fCreateMaterialMastermatl2", Enabled = true)]
      // [Appearance("fCreateMaterialMastermatl2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -580,7 +580,7 @@ namespace cetho.Module.BusinessObjects
      // Sales: General/Plant
      // Notes for fCreateMaterialMaster : 
      private string _plnt1; 
-     [XafDisplayName("Plant (General)"), ToolTip("Plant (Sales)")] 
+     [XafDisplayName("Plant "), ToolTip("Plant ")] 
      // [Appearance("fCreateMaterialMasterplnt1", Enabled = true)]
      // [Appearance("fCreateMaterialMasterplnt1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -625,7 +625,7 @@ namespace cetho.Module.BusinessObjects
      // Sales: sales org. 1
      // Notes for fCreateMaterialMaster : 
      private string _baseuom1; 
-     [XafDisplayName("Base Unit of Measure (Sales)"), ToolTip("Base Unit of Measure (Sales)")] 
+     [XafDisplayName("Base Unit of Measure "), ToolTip("Base Unit of Measure ")] 
      // [Appearance("fCreateMaterialMasterbaseuom1", Enabled = true)]
      // [Appearance("fCreateMaterialMasterbaseuom1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -699,7 +699,7 @@ namespace cetho.Module.BusinessObjects
      // Sales: sales org. 1
      // Notes for fCreateMaterialMaster : 
      private string _matl1; 
-     [XafDisplayName("Material (Sales)"), ToolTip("Material (Sales)")] 
+     [XafDisplayName("Material "), ToolTip("Material ")] 
      // [Appearance("fCreateMaterialMastermatl1", Enabled = true)]
      // [Appearance("fCreateMaterialMastermatl1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

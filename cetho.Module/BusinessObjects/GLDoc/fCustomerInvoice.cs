@@ -92,7 +92,7 @@ namespace cetho.Module.BusinessObjects
      // Basic data
      // Notes for fCustomerInvoice : 
      private DateTime _basedate; 
-     [XafDisplayName("Baseline date"), ToolTip("Baseline date")] 
+     [XafDisplayName("Baseline Date"), ToolTip("Baseline date")] 
      // [Appearance("fCustomerInvoicebasedate", Enabled = true)]
      // [Appearance("fCustomerInvoicebasedateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -106,7 +106,7 @@ namespace cetho.Module.BusinessObjects
      // Basic data
      // Notes for fCustomerInvoice : 
      private bool _caltax; 
-     [XafDisplayName("Calculate tax"), ToolTip("Calculate tax")] 
+     [XafDisplayName("Calculate Tax"), ToolTip("Calculate tax")] 
      // [Appearance("fCustomerInvoicecaltax", Enabled = true)]
      // [Appearance("fCustomerInvoicecaltaxVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -134,7 +134,7 @@ namespace cetho.Module.BusinessObjects
      // Basic data
      // Notes for fCustomerInvoice : 
      private fGLAcct _crossccno; 
-     [XafDisplayName("Cross-CC no."), ToolTip("Cross-CC no.")] 
+     [XafDisplayName("Cross-CC No."), ToolTip("Cross-CC no.")] 
      // [Appearance("fCustomerInvoicecrossccno", Enabled = true)]
      // [Appearance("fCustomerInvoicecrossccnoVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -162,7 +162,7 @@ namespace cetho.Module.BusinessObjects
      // Basic data
      // Notes for fCustomerInvoice : 
      private enumDocType _doctype; 
-     [XafDisplayName("Document type"), ToolTip("Document type")] 
+     [XafDisplayName("Document Type"), ToolTip("Document type")] 
      // [Appearance("fCustomerInvoicedoctype", Enabled = true)]
      // [Appearance("fCustomerInvoicedoctypeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -176,7 +176,7 @@ namespace cetho.Module.BusinessObjects
      // Basic data
      // Notes for fCustomerInvoice : 
      private DateTime _invoicedate; 
-     [XafDisplayName("Invoice date"), ToolTip("Invoice date")] 
+     [XafDisplayName("Invoice Date"), ToolTip("Invoice date")] 
      // [Appearance("fCustomerInvoiceinvoicedate", Enabled = true)]
      // [Appearance("fCustomerInvoiceinvoicedateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -190,7 +190,7 @@ namespace cetho.Module.BusinessObjects
      // Basic data
      // Notes for fCustomerInvoice : 
      private string _paymtterms; 
-     [XafDisplayName("Paymt terms"), ToolTip("Paymt terms")] 
+     [XafDisplayName("Paymt Terms"), ToolTip("Paymt terms")] 
      // [Appearance("fCustomerInvoicepaymtterms", Enabled = true)]
      // [Appearance("fCustomerInvoicepaymttermsVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -292,7 +292,7 @@ namespace cetho.Module.BusinessObjects
      // Local currency
      // Notes for fCustomerInvoice : 
      private double _exchangerate; 
-     [XafDisplayName("Exchange rate"), ToolTip("Exchange rate")] 
+     [XafDisplayName("Exchange Rate"), ToolTip("Exchange rate")] 
      // [Appearance("fCustomerInvoiceexchangerate", Enabled = true)]
      // [Appearance("fCustomerInvoiceexchangerateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -306,7 +306,7 @@ namespace cetho.Module.BusinessObjects
      // Local currency
      // Notes for fCustomerInvoice : 
      private DateTime _transltdate; 
-     [XafDisplayName("Translation dte"), ToolTip("Translation dte")] 
+     [XafDisplayName("Translation Date"), ToolTip("Translation dte")] 
      // [Appearance("fCustomerInvoicetransltdate", Enabled = true)]
      // [Appearance("fCustomerInvoicetransltdateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -334,7 +334,7 @@ namespace cetho.Module.BusinessObjects
      // 
      // Notes for fCustomerInvoice : 
      private fGLAcct _clacct; 
-     [XafDisplayName("G/L acct"), ToolTip("G/L acct")] 
+     [XafDisplayName("G/L Acct"), ToolTip("G/L acct")] 
      // [Appearance("fCustomerInvoiceclacct", Enabled = true)]
      // [Appearance("fCustomerInvoiceclacctVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

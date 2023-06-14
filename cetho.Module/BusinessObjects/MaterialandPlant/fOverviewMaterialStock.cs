@@ -78,7 +78,7 @@ namespace cetho.Module.BusinessObjects
      // Database selections
      // Notes for fOverviewMaterialStock : 
      private string _mat1; 
-     [XafDisplayName("Material (DBS)"), ToolTip("Material")] 
+     [XafDisplayName("Material "), ToolTip("Material")] 
      // [Appearance("fOverviewMaterialStockmat", Enabled = true)]
      // [Appearance("fOverviewMaterialStockmatVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -93,7 +93,7 @@ namespace cetho.Module.BusinessObjects
      // Database selections
      // Notes for fOverviewMaterialStock : 
      private string _batch1; 
-     [XafDisplayName("Batch (DBS)"), ToolTip("Batch (DBS)")] 
+     [XafDisplayName("Batch "), ToolTip("Batch ")] 
      // [Appearance("fOverviewMaterialStockbatch1", Enabled = true)]
      // [Appearance("fOverviewMaterialStockbatch1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -108,7 +108,7 @@ namespace cetho.Module.BusinessObjects
      // Database selections
      // Notes for fOverviewMaterialStock : 
      private string _plant; 
-     [XafDisplayName("Plant (DBS)"), ToolTip("Plant (DBS)")] 
+     [XafDisplayName("Plant "), ToolTip("Plant ")] 
      // [Appearance("fOverviewMaterialStockplant", Enabled = true)]
      // [Appearance("fOverviewMaterialStockplantVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -123,7 +123,7 @@ namespace cetho.Module.BusinessObjects
      // Database selections
      // Notes for fOverviewMaterialStock : 
      private string _storloc1; 
-     [XafDisplayName("Storage Location (DBS)"), ToolTip("Storage Location (DBS)")] 
+     [XafDisplayName("Storage Location "), ToolTip("Storage Location ")] 
      // [Appearance("fOverviewMaterialStockstorloc1", Enabled = true)]
      // [Appearance("fOverviewMaterialStockstorloc1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -138,7 +138,7 @@ namespace cetho.Module.BusinessObjects
      // Database selections
      // Notes for fOverviewMaterialStock : 
      private string _to1; 
-     [XafDisplayName("to (DBS)"), ToolTip("to")] 
+     [XafDisplayName("to "), ToolTip("to")] 
      // [Appearance("fOverviewMaterialStockto", Enabled = true)]
      // [Appearance("fOverviewMaterialStocktoVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

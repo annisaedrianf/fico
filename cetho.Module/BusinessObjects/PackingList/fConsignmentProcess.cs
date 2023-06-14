@@ -183,7 +183,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Fill-up: Overview
      // Notes for fConsignmentProcess : 
      private double _netval; 
-     [XafDisplayName("Net Value (Fill-Up)"), ToolTip("Net Value")] 
+     [XafDisplayName("Net Value "), ToolTip("Net Value")] 
      // [Appearance("fConsignmentProcessnetval", Enabled = true)]
      // [Appearance("fConsignmentProcessnetvalVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -197,7 +197,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Fill-up: Overview
      // Notes for fConsignmentProcess : 
      private DateTime _podate; 
-     [XafDisplayName("PO Date (Fill-Up)"), ToolTip("PO Date")] 
+     [XafDisplayName("PO Date "), ToolTip("PO Date")] 
      // [Appearance("fConsignmentProcesspodate", Enabled = true)]
      // [Appearance("fConsignmentProcesspodateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -211,7 +211,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Fill-up: Overview
      // Notes for fConsignmentProcess : 
      private string _ponumb; 
-     [XafDisplayName("PO Number (Fill-Up)"), ToolTip("PO Number")] 
+     [XafDisplayName("PO Number "), ToolTip("PO Number")] 
      // [Appearance("fConsignmentProcessponumb", Enabled = true)]
      // [Appearance("fConsignmentProcessponumbVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -226,7 +226,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Fill-up: Overview
      // Notes for fConsignmentProcess : 
      private string _shipparty; 
-     [XafDisplayName("Ship-To Party (Fill-Up)"), ToolTip("Ship-To Party")] 
+     [XafDisplayName("Ship-To Party "), ToolTip("Ship-To Party")] 
      // [Appearance("fConsignmentProcessshipparty", Enabled = true)]
      // [Appearance("fConsignmentProcessshippartyVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -241,7 +241,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Fill-up: Overview
      // Notes for fConsignmentProcess : 
      private string _soldparty; 
-     [XafDisplayName("Sold-To Party (Fill-Up)"), ToolTip("Sold-To Party")] 
+     [XafDisplayName("Sold-To Party "), ToolTip("Sold-To Party")] 
      // [Appearance("fConsignmentProcesssoldparty", Enabled = true)]
      // [Appearance("fConsignmentProcesssoldpartyVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -443,7 +443,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Issue: Overview
      // Notes for fConsignmentProcess : 
      private double _netval1; 
-     [XafDisplayName("Net Value (Issue)"), ToolTip("Net Value")] 
+     [XafDisplayName("Net Value "), ToolTip("Net Value")] 
      // [Appearance("fConsignmentProcessnetval1", Enabled = true)]
      // [Appearance("fConsignmentProcessnetval1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -457,7 +457,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Issue: Overview
      // Notes for fConsignmentProcess : 
      private DateTime _podate1; 
-     [XafDisplayName("PO Date (Issue)"), ToolTip("PO Date")] 
+     [XafDisplayName("PO Date "), ToolTip("PO Date")] 
      // [Appearance("fConsignmentProcesspodate1", Enabled = true)]
      // [Appearance("fConsignmentProcesspodate1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -471,7 +471,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Issue: Overview
      // Notes for fConsignmentProcess : 
      private string _ponumb1; 
-     [XafDisplayName("PO Number (Issue)"), ToolTip("PO Number")] 
+     [XafDisplayName("PO Number "), ToolTip("PO Number")] 
      // [Appearance("fConsignmentProcessponumb1", Enabled = true)]
      // [Appearance("fConsignmentProcessponumb1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -486,7 +486,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Issue: Overview
      // Notes for fConsignmentProcess : 
      private string _shipparty1; 
-     [XafDisplayName("Ship-To Party (Issue)"), ToolTip("Ship-To Party")] 
+     [XafDisplayName("Ship-To Party "), ToolTip("Ship-To Party")] 
      // [Appearance("fConsignmentProcessshipparty1", Enabled = true)]
      // [Appearance("fConsignmentProcessshipparty1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -501,7 +501,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Issue: Overview
      // Notes for fConsignmentProcess : 
      private string _soldparty1; 
-     [XafDisplayName("Sold-To Party (Issue)"), ToolTip("Sold-To Party")] 
+     [XafDisplayName("Sold-To Party "), ToolTip("Sold-To Party")] 
      // [Appearance("fConsignmentProcesssoldparty1", Enabled = true)]
      // [Appearance("fConsignmentProcesssoldparty1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -531,7 +531,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Returns: Overview
      // Notes for fConsignmentProcess : 
      private double _netval2; 
-     [XafDisplayName("Net Value (Returns)"), ToolTip("Net Value")] 
+     [XafDisplayName("Net Value "), ToolTip("Net Value")] 
      // [Appearance("fConsignmentProcessnetval2", Enabled = true)]
      // [Appearance("fConsignmentProcessnetval2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -545,7 +545,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Returns: Overview
      // Notes for fConsignmentProcess : 
      private DateTime _podate2; 
-     [XafDisplayName("PO Date (Returns)"), ToolTip("PO Date")] 
+     [XafDisplayName("PO Date "), ToolTip("PO Date")] 
      // [Appearance("fConsignmentProcesspodate2", Enabled = true)]
      // [Appearance("fConsignmentProcesspodate2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -559,7 +559,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Returns: Overview
      // Notes for fConsignmentProcess : 
      private string _ponumb2; 
-     [XafDisplayName("PO Number (Returns)"), ToolTip("PO Number")] 
+     [XafDisplayName("PO Number "), ToolTip("PO Number")] 
      // [Appearance("fConsignmentProcessponumb2", Enabled = true)]
      // [Appearance("fConsignmentProcessponumb2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -574,7 +574,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Returns: Overview
      // Notes for fConsignmentProcess : 
      private string _shipparty2; 
-     [XafDisplayName("Ship-To Party (Returns)"), ToolTip("Ship-To Party")] 
+     [XafDisplayName("Ship-To Party "), ToolTip("Ship-To Party")] 
      // [Appearance("fConsignmentProcessshipparty2", Enabled = true)]
      // [Appearance("fConsignmentProcessshipparty2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -589,7 +589,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Returns: Overview
      // Notes for fConsignmentProcess : 
      private string _soldparty2; 
-     [XafDisplayName("Sold-To Party (Returns)"), ToolTip("Sold-To Party")] 
+     [XafDisplayName("Sold-To Party "), ToolTip("Sold-To Party")] 
      // [Appearance("fConsignmentProcesssoldparty2", Enabled = true)]
      // [Appearance("fConsignmentProcesssoldparty2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -619,7 +619,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Pick-up: Overview
      // Notes for fConsignmentProcess : 
      private double _netval3; 
-     [XafDisplayName("Net Value (Pick-Up)"), ToolTip("Net Value")] 
+     [XafDisplayName("Net Value "), ToolTip("Net Value")] 
      // [Appearance("fConsignmentProcessnetval3", Enabled = true)]
      // [Appearance("fConsignmentProcessnetval3Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -633,7 +633,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Pick-up: Overview
      // Notes for fConsignmentProcess : 
      private DateTime _podate3; 
-     [XafDisplayName("PO Date (Pick-Up)"), ToolTip("PO Date")] 
+     [XafDisplayName("PO Date "), ToolTip("PO Date")] 
      // [Appearance("fConsignmentProcesspodate3", Enabled = true)]
      // [Appearance("fConsignmentProcesspodate3Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -647,7 +647,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Pick-up: Overview
      // Notes for fConsignmentProcess : 
      private string _ponumb3; 
-     [XafDisplayName("PO Number (Pick-Up)"), ToolTip("PO Number")] 
+     [XafDisplayName("PO Number "), ToolTip("PO Number")] 
      // [Appearance("fConsignmentProcessponumb3", Enabled = true)]
      // [Appearance("fConsignmentProcessponumb3Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -662,7 +662,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Pick-up: Overview
      // Notes for fConsignmentProcess : 
      private string _shipparty3; 
-     [XafDisplayName("Ship-To Party (Pick-Up)"), ToolTip("Ship-To Party")] 
+     [XafDisplayName("Ship-To Party "), ToolTip("Ship-To Party")] 
      // [Appearance("fConsignmentProcessshipparty3", Enabled = true)]
      // [Appearance("fConsignmentProcessshipparty3Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -677,7 +677,7 @@ namespace cetho.Module.BusinessObjects
      // Create Consignment Pick-up: Overview
      // Notes for fConsignmentProcess : 
      private string _soldparty3; 
-     [XafDisplayName("Sold-To Party (Pick-Up)"), ToolTip("Sold-To Party")] 
+     [XafDisplayName("Sold-To Party "), ToolTip("Sold-To Party")] 
      // [Appearance("fConsignmentProcesssoldparty3", Enabled = true)]
      // [Appearance("fConsignmentProcesssoldparty3Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

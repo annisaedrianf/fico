@@ -391,7 +391,7 @@ namespace cetho.Module.BusinessObjects
      // Existing Number Ranges
      // Notes for fCreateSalesDocument : 
      private string _frmnumb1; 
-     [XafDisplayName("From Number (Exst.)"), ToolTip("From number (Exst.)")] 
+     [XafDisplayName("From Number "), ToolTip("From number ")] 
      // [Appearance("fCreateSalesDocumentfrmnumb1", Enabled = true)]
      // [Appearance("fCreateSalesDocumentfrmnumb1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -406,7 +406,7 @@ namespace cetho.Module.BusinessObjects
      // Existing Number Ranges
      // Notes for fCreateSalesDocument : 
      private string _no1; 
-     [XafDisplayName("No (Exst.)"), ToolTip("No (Exst.)")] 
+     [XafDisplayName("No "), ToolTip("No ")] 
      // [Appearance("fCreateSalesDocumentno1", Enabled = true)]
      // [Appearance("fCreateSalesDocumentno1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -436,7 +436,7 @@ namespace cetho.Module.BusinessObjects
      // Existing Number Ranges
      // Notes for fCreateSalesDocument : 
      private string _tonumb1; 
-     [XafDisplayName("To Number (Exst.)"), ToolTip("To Number (Exst.)")] 
+     [XafDisplayName("To Number "), ToolTip("To Number ")] 
      // [Appearance("fCreateSalesDocumenttonumb1", Enabled = true)]
      // [Appearance("fCreateSalesDocumenttonumb1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -910,7 +910,7 @@ namespace cetho.Module.BusinessObjects
      // Shipping
      // Notes for fCreateSalesDocument : 
      private string _delivbock1; 
-     [XafDisplayName("Delivery Block (Shipping)"), ToolTip("Delivery block (Shipping)")] 
+     [XafDisplayName("Delivery Block"), ToolTip("Delivery block")] 
      // [Appearance("fCreateSalesDocumentdelivbock1", Enabled = true)]
      // [Appearance("fCreateSalesDocumentdelivbock1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

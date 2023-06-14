@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Master">
+        <Items Id="Items">
+          <Item Id="fReservationOfInventory_ListView" ImageName="Actions_FullScreen" Removed="True" />
+          <Item Id="Inventory">
+            <Items Id="Items">
+              <Item Id="fReservationOfInventory_ListView" ViewId="fReservationOfInventory_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

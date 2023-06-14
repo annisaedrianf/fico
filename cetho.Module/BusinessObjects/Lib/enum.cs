@@ -142,4 +142,24 @@ namespace cetho.Module.BusinessObjects
     {
 
     }
+
+    public enum enumDeleteDB
+    {
+
+    }
+
+    public enum enumTextDetPrc
+    {
+
+    }
+
+    public enum enumDelCompl
+    {
+
+    }
+
+    public enum enumStockType
+    {
+
+    }
 }

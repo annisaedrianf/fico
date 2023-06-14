@@ -108,7 +108,7 @@ namespace cetho.Module.BusinessObjects
      // Create Deliv.Fee of Charge: Overview
      // Notes for fCreateReturn : 
      private double _netval1; 
-     [XafDisplayName("Net Value (Fee)"), ToolTip("Net Value")] 
+     [XafDisplayName("Net Value "), ToolTip("Net Value")] 
      // [Appearance("fCreateReturnnetval1", Enabled = true)]
      // [Appearance("fCreateReturnnetval1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -122,7 +122,7 @@ namespace cetho.Module.BusinessObjects
      // Create Deliv.Fee of Charge: Overview
      // Notes for fCreateReturn : 
      private DateTime _podate1; 
-     [XafDisplayName("PO Date (Fee)"), ToolTip("PO Date")] 
+     [XafDisplayName("PO Date "), ToolTip("PO Date")] 
      // [Appearance("fCreateReturnpodate1", Enabled = true)]
      // [Appearance("fCreateReturnpodate1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -136,7 +136,7 @@ namespace cetho.Module.BusinessObjects
      // Create Deliv.Fee of Charge: Overview
      // Notes for fCreateReturn : 
      private string _ponumb1; 
-     [XafDisplayName("PO Number (Fee)"), ToolTip("PO Number")] 
+     [XafDisplayName("PO Number "), ToolTip("PO Number")] 
      // [Appearance("fCreateReturnponumb1", Enabled = true)]
      // [Appearance("fCreateReturnponumb1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -151,7 +151,7 @@ namespace cetho.Module.BusinessObjects
      // Create Deliv.Fee of Charge: Overview
      // Notes for fCreateReturn : 
      private string _shipparty2; 
-     [XafDisplayName("Ship-To Party (Fee)"), ToolTip("Ship-To Party")] 
+     [XafDisplayName("Ship-To Party "), ToolTip("Ship-To Party")] 
      // [Appearance("fCreateReturnshipparty2", Enabled = true)]
      // [Appearance("fCreateReturnshipparty2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -166,7 +166,7 @@ namespace cetho.Module.BusinessObjects
      // Create Deliv.Fee of Charge: Overview
      // Notes for fCreateReturn : 
      private string _soldparty2; 
-     [XafDisplayName("Sold-To Party (Fee)"), ToolTip("Sold-To Party")] 
+     [XafDisplayName("Sold-To Party "), ToolTip("Sold-To Party")] 
      // [Appearance("fCreateReturnsoldparty2", Enabled = true)]
      // [Appearance("fCreateReturnsoldparty2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -196,7 +196,7 @@ namespace cetho.Module.BusinessObjects
      // Create Returns: Overview
      // Notes for fCreateReturn : 
      private double _netval; 
-     [XafDisplayName("Net Value (Returns)"), ToolTip("Net Value")] 
+     [XafDisplayName("Net Value "), ToolTip("Net Value")] 
      // [Appearance("fCreateReturnnetval", Enabled = true)]
      // [Appearance("fCreateReturnnetvalVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -210,7 +210,7 @@ namespace cetho.Module.BusinessObjects
      // Create Returns: Overview
      // Notes for fCreateReturn : 
      private DateTime _podate; 
-     [XafDisplayName("PO Date (Returns)"), ToolTip("PO Date")] 
+     [XafDisplayName("PO Date "), ToolTip("PO Date")] 
      // [Appearance("fCreateReturnpodate", Enabled = true)]
      // [Appearance("fCreateReturnpodateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -224,7 +224,7 @@ namespace cetho.Module.BusinessObjects
      // Create Returns: Overview
      // Notes for fCreateReturn : 
      private string _ponumb; 
-     [XafDisplayName("PO Number (Returns)"), ToolTip("PO Number")] 
+     [XafDisplayName("PO Number "), ToolTip("PO Number")] 
      // [Appearance("fCreateReturnponumb", Enabled = true)]
      // [Appearance("fCreateReturnponumbVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -249,12 +249,12 @@ namespace cetho.Module.BusinessObjects
      public  string returns
      { 
        get { return _returns; } 
-       set { SetPropertyValue(nameof(returns), ref _returns, value); } 
+       set { SetPropertyValue(nameof (returns), ref _returns, value); } 
      } 
      // Create Returns: Overview
      // Notes for fCreateReturn : 
      private string _shipparty; 
-     [XafDisplayName("Ship-To Party (Returns)"), ToolTip("Ship-To Party")] 
+     [XafDisplayName("Ship-To Party "), ToolTip("Ship-To Party")] 
      // [Appearance("fCreateReturnshipparty", Enabled = true)]
      // [Appearance("fCreateReturnshippartyVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -269,7 +269,7 @@ namespace cetho.Module.BusinessObjects
      // Create Returns: Overview
      // Notes for fCreateReturn : 
      private string _soldparty1; 
-     [XafDisplayName("Sold-To Party (Returns)"), ToolTip("Sold-To Party")] 
+     [XafDisplayName("Sold-To Party "), ToolTip("Sold-To Party")] 
      // [Appearance("fCreateReturnsoldparty1", Enabled = true)]
      // [Appearance("fCreateReturnsoldparty1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -284,7 +284,7 @@ namespace cetho.Module.BusinessObjects
      // Create Subs.Dlv.Free of Ch.:Overview
      // Notes for fCreateReturn : 
      private double _netval2; 
-     [XafDisplayName("Net Value (Subs.)"), ToolTip("Net Value")] 
+     [XafDisplayName("Net Value "), ToolTip("Net Value")] 
      // [Appearance("fCreateReturnnetval2", Enabled = true)]
      // [Appearance("fCreateReturnnetval2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -298,7 +298,7 @@ namespace cetho.Module.BusinessObjects
      // Create Subs.Dlv.Free of Ch.:Overview
      // Notes for fCreateReturn : 
      private DateTime _podate2; 
-     [XafDisplayName("PO Date (Subs.)"), ToolTip("PO Date")] 
+     [XafDisplayName("PO Date "), ToolTip("PO Date")] 
      // [Appearance("fCreateReturnpodate2", Enabled = true)]
      // [Appearance("fCreateReturnpodate2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -312,7 +312,7 @@ namespace cetho.Module.BusinessObjects
      // Create Subs.Dlv.Free of Ch.:Overview
      // Notes for fCreateReturn : 
      private string _ponumb2; 
-     [XafDisplayName("PO Number (Subs.)"), ToolTip("PO Number")] 
+     [XafDisplayName("PO Number "), ToolTip("PO Number")] 
      // [Appearance("fCreateReturnponumb2", Enabled = true)]
      // [Appearance("fCreateReturnponumb2Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -327,7 +327,7 @@ namespace cetho.Module.BusinessObjects
      // Create Subs.Dlv.Free of Ch.:Overview
      // Notes for fCreateReturn : 
      private string _shipparty3; 
-     [XafDisplayName("Ship-To Party (Subs.)"), ToolTip("Ship-To Party")] 
+     [XafDisplayName("Ship-To Party "), ToolTip("Ship-To Party")] 
      // [Appearance("fCreateReturnshipparty3", Enabled = true)]
      // [Appearance("fCreateReturnshipparty3Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -342,7 +342,7 @@ namespace cetho.Module.BusinessObjects
      // Create Subs.Dlv.Free of Ch.:Overview
      // Notes for fCreateReturn : 
      private string _soldparty3; 
-     [XafDisplayName("Sold-To Party (Subs.)"), ToolTip("Sold-To Party")] 
+     [XafDisplayName("Sold-To Party "), ToolTip("Sold-To Party")] 
      // [Appearance("fCreateReturnsoldparty3", Enabled = true)]
      // [Appearance("fCreateReturnsoldparty3Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -579,7 +579,7 @@ namespace cetho.Module.BusinessObjects
      // Return delivery Create: Overview
      // Notes for fCreateReturn : 
      private string _shipparty1; 
-     [XafDisplayName("Ship-To Party (Return Deliv)"), ToolTip("Ship-To Party")] 
+     [XafDisplayName("Ship-To Party "), ToolTip("Ship-To Party")] 
      // [Appearance("fCreateReturnshipparty1", Enabled = true)]
      // [Appearance("fCreateReturnshipparty1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -694,7 +694,7 @@ namespace cetho.Module.BusinessObjects
      // Sales
      // Notes for fCreateReturn : 
      private DateTime _reqdelivdate1; 
-     [XafDisplayName("Req. Deliv Date (Sales)"), ToolTip("Req. Deliv Date")] 
+     [XafDisplayName("Req. Deliv Date "), ToolTip("Req. Deliv Date")] 
      // [Appearance("fCreateReturnreqdelivdate1", Enabled = true)]
      // [Appearance("fCreateReturnreqdelivdate1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -723,7 +723,7 @@ namespace cetho.Module.BusinessObjects
      // Sales
      // Notes for fCreateReturn : 
      private double _totweight; 
-     [XafDisplayName("Total Weight (Sales)"), ToolTip("Total Weight")] 
+     [XafDisplayName("Total Weight "), ToolTip("Total Weight")] 
      // [Appearance("fCreateReturntotweight", Enabled = true)]
      // [Appearance("fCreateReturntotweightVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -766,7 +766,7 @@ namespace cetho.Module.BusinessObjects
      // Sales order data
      // Notes for fCreateReturn : 
      private string _order1; 
-     [XafDisplayName("Order (Sales)"), ToolTip("Order")] 
+     [XafDisplayName("Order "), ToolTip("Order")] 
      // [Appearance("fCreateReturnorder1", Enabled = true)]
      // [Appearance("fCreateReturnorder1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

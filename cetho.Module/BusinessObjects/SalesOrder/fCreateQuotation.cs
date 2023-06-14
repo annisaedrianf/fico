@@ -196,7 +196,7 @@ namespace cetho.Module.BusinessObjects
      // Inquiry
      // Notes for fCreateQuotation : 
      private string _reqdelivdate; 
-     [XafDisplayName("Requested Deliv. Date (Inquiry)"), ToolTip("Requested deliv date")] 
+     [XafDisplayName("Requested Deliv. Date"), ToolTip("Requested deliv date")] 
      // [Appearance("fCreateQuotationreqdelivdate", Enabled = true)]
      // [Appearance("fCreateQuotationreqdelivdateVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -211,7 +211,7 @@ namespace cetho.Module.BusinessObjects
      // Inquiry
      // Notes for fCreateQuotation : 
      private string _soldparty1; 
-     [XafDisplayName("Sold-To Party (Inquiry)"), ToolTip("Sold-to party")] 
+     [XafDisplayName("Sold-To Party"), ToolTip("Sold-to party")] 
      // [Appearance("fCreateQuotationsoldparty", Enabled = true)]
      // [Appearance("fCreateQuotationsoldpartyVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

@@ -93,7 +93,7 @@ namespace cetho.Module.BusinessObjects
      // Account Management
      // Notes for fCustomer : 
      private string _cash; 
-     [XafDisplayName("Cash mgmt group"), ToolTip("Cash mgmt group")] 
+     [XafDisplayName("Cash Mgmt Group"), ToolTip("Cash mgmt group")] 
      // [Appearance("fCustomercash", Enabled = true)]
      // [Appearance("fCustomercashVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -123,7 +123,7 @@ namespace cetho.Module.BusinessObjects
      // Account Management
      // Notes for fCustomer : 
      private string _preference; 
-     [XafDisplayName("Preference ind."), ToolTip("Preference ind.")] 
+     [XafDisplayName("Preference Ind."), ToolTip("Preference ind.")] 
      // [Appearance("fCustomerpreference", Enabled = true)]
      // [Appearance("fCustomerpreferenceVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -168,7 +168,7 @@ namespace cetho.Module.BusinessObjects
      // Account Management
      // Notes for fCustomer : 
      private string _valueadjust; 
-     [XafDisplayName("Value adjustment"), ToolTip("Value adjustment")] 
+     [XafDisplayName("Value Adjustment"), ToolTip("Value adjustment")] 
      // [Appearance("fCustomervalueadjust", Enabled = true)]
      // [Appearance("fCustomervalueadjustVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -286,7 +286,7 @@ namespace cetho.Module.BusinessObjects
      // Address
      // Notes for fCustomer : 
      private string _transportation; 
-     [XafDisplayName("Transportation zone"), ToolTip("Transportation zone")] 
+     [XafDisplayName("Transportation Zone"), ToolTip("Transportation zone")] 
      // [Appearance("fCustomertransportation", Enabled = true)]
      // [Appearance("fCustomertransportationVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -301,7 +301,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private string _acctassgmtgroup; 
-     [XafDisplayName("Acct assgmt group"), ToolTip("Acct assgmt group")] 
+     [XafDisplayName("Acct Assgmt Group"), ToolTip("Acct assgmt group")] 
      // [Appearance("fCustomeracctassgmtgroup", Enabled = true)]
      // [Appearance("fCustomeracctassgmtgroupVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -330,7 +330,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private string _creditctrlarea; 
-     [XafDisplayName("Credit ctrl area"), ToolTip("Credit ctrl area")] 
+     [XafDisplayName("Credit Ctrl Area"), ToolTip("Credit ctrl area")] 
      // [Appearance("fCustomercreditctrlarea", Enabled = true)]
      // [Appearance("fCustomercreditctrlareaVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -375,7 +375,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private fCustomerInvoice _invoicedates; 
-     [XafDisplayName("Invoice dates"), ToolTip("Invoice dates")] 
+     [XafDisplayName("Invoice Dates"), ToolTip("Invoice dates")] 
      // [Appearance("fCustomerinvoicedates", Enabled = true)]
      // [Appearance("fCustomerinvoicedatesVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -389,7 +389,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private fCustomerInvoice _invoiclistdates; 
-     [XafDisplayName("InvoicingListDates"), ToolTip("InvoicingListDates")] 
+     [XafDisplayName("Invoicing List Dates"), ToolTip("InvoicingListDates")] 
      // [Appearance("fCustomerinvoiclistdates", Enabled = true)]
      // [Appearance("fCustomerinvoiclistdatesVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -418,7 +418,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private string _paymguarproc; 
-     [XafDisplayName("Paym.guar.proc."), ToolTip("Paym.guar.proc.")] 
+     [XafDisplayName("Paym. Guar. Proc."), ToolTip("Paym.guar.proc.")] 
      // [Appearance("fCustomerpaymguarproc", Enabled = true)]
      // [Appearance("fCustomerpaymguarprocVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -433,7 +433,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private bool _pricedetermin; 
-     [XafDisplayName("Price determin."), ToolTip("Price determin.")] 
+     [XafDisplayName("Price Determin."), ToolTip("Price determin.")] 
      // [Appearance("fCustomerpricedetermin", Enabled = true)]
      // [Appearance("fCustomerpricedeterminVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -461,7 +461,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private bool _subsinvoice; 
-     [XafDisplayName("Subs. Invoice processing"), ToolTip("Subs. Invoice processing")] 
+     [XafDisplayName("Subs. Invoice Processing"), ToolTip("Subs. Invoice processing")] 
      // [Appearance("fCustomersubsinvoice", Enabled = true)]
      // [Appearance("fCustomersubsinvoiceVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -490,7 +490,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private string _taxcategory; 
-     [XafDisplayName("Tax category"), ToolTip("Tax category")] 
+     [XafDisplayName("Tax Category"), ToolTip("Tax category")] 
      // [Appearance("fCustomertaxcategory", Enabled = true)]
      // [Appearance("fCustomertaxcategoryVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -594,7 +594,7 @@ namespace cetho.Module.BusinessObjects
      // Payment Transactions
      // Notes for fCustomer : 
      private string _bechargespayt; 
-     [XafDisplayName("B/e charges payt term"), ToolTip("B/e charges payt term")] 
+     [XafDisplayName("B/E Charges Payt Term"), ToolTip("B/e charges payt term")] 
      // [Appearance("fCustomerbechargespayt", Enabled = true)]
      // [Appearance("fCustomerbechargespaytVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -609,7 +609,7 @@ namespace cetho.Module.BusinessObjects
      // Payment Transactions
      // Notes for fCustomer : 
      private string _knownleave; 
-     [XafDisplayName("Known/neg.leave"), ToolTip("Known/neg.leave")] 
+     [XafDisplayName("Known/Neg. Leave"), ToolTip("Known/neg.leave")] 
      // [Appearance("fCustomerknownleave", Enabled = true)]
      // [Appearance("fCustomerknownleaveVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -624,7 +624,7 @@ namespace cetho.Module.BusinessObjects
      // Payment Transactions
      // Notes for fCustomer : 
      private bool _paythistoryrecord; 
-     [XafDisplayName("Payment history record"), ToolTip("Payment history record")] 
+     [XafDisplayName("Payment History Record"), ToolTip("Payment history record")] 
      // [Appearance("fCustomerpaythistoryrecord", Enabled = true)]
      // [Appearance("fCustomerpaythistoryrecordVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -653,7 +653,7 @@ namespace cetho.Module.BusinessObjects
      // Payment Transactions
      // Notes for fCustomer : 
      private string _timeuntiluntilcheck; 
-     [XafDisplayName("Time until check paid"), ToolTip("Time until check paid")] 
+     [XafDisplayName("Time until Check Paid"), ToolTip("Time until check paid")] 
      // [Appearance("fCustomertimeuntiluntilcheck", Enabled = true)]
      // [Appearance("fCustomertimeuntiluntilcheckVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -726,7 +726,7 @@ namespace cetho.Module.BusinessObjects
      // Reference
      // Notes for fCustomer : 
      private string _refdivision; 
-     [XafDisplayName("Reference division"), ToolTip("Reference division")] 
+     [XafDisplayName("Reference Division"), ToolTip("Reference division")] 
      // [Appearance("fCustomerrefdivision", Enabled = true)]
      // [Appearance("fCustomerrefdivisionVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -741,7 +741,7 @@ namespace cetho.Module.BusinessObjects
      // Reference
      // Notes for fCustomer : 
      private string _salesorgan1; 
-     [XafDisplayName("SalesOrganization (Ref)"), ToolTip("SalesOrganization (Ref)")] 
+     [XafDisplayName("Sales Organization (Ref)"), ToolTip("SalesOrganization (Ref)")] 
      // [Appearance("fCustomersalesorgan1", Enabled = true)]
      // [Appearance("fCustomersalesorgan1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -786,7 +786,7 @@ namespace cetho.Module.BusinessObjects
      // Sales Area
      // Notes for fCustomer : 
      private string _salesorgan; 
-     [XafDisplayName("SalesOrganization"), ToolTip("SalesOrganization")] 
+     [XafDisplayName("Sales Organization"), ToolTip("SalesOrganization")] 
      // [Appearance("fCustomersalesorgan", Enabled = true)]
      // [Appearance("fCustomersalesorganVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
