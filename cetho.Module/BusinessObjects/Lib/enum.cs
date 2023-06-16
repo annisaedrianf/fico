@@ -200,4 +200,14 @@ namespace cetho.Module.BusinessObjects
     {
 
     }
+
+    public enum enumIndustrySector
+    {
+
+    }
+
+    public enum enumMaterialType
+    {
+
+    }
 }
