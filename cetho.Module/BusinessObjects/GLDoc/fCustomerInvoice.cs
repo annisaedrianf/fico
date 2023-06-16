@@ -264,7 +264,7 @@ namespace cetho.Module.BusinessObjects
      // Local currency
      // Notes for fCustomerInvoice : 
      private double _amount1; 
-     [XafDisplayName("Amount (Local)"), ToolTip("Amount (Local)")] 
+     [XafDisplayName("Amount "), ToolTip("Amount ")] 
      // [Appearance("fCustomerInvoiceamount1", Enabled = true)]
      // [Appearance("fCustomerInvoiceamount1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -278,7 +278,7 @@ namespace cetho.Module.BusinessObjects
      // Local currency
      // Notes for fCustomerInvoice : 
      private double _amtloccur; 
-     [XafDisplayName("Amount in Doc. Curr. (Local)"), ToolTip("Amount in Doc. Curr. (Local)")] 
+     [XafDisplayName("Amount in Doc. Curr. "), ToolTip("Amount in Doc. Curr. ")] 
      // [Appearance("fCustomerInvoiceamtloccur", Enabled = true)]
      // [Appearance("fCustomerInvoiceamtloccurVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

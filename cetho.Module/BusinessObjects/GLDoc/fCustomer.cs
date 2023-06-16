@@ -78,7 +78,7 @@ namespace cetho.Module.BusinessObjects
      // Account Management
      // Notes for fCustomer : 
      private string _authorization1; 
-     [XafDisplayName("Authorization (Acc)"), ToolTip("Authorization (Acc)")] 
+     [XafDisplayName("Authorization"), ToolTip("Authorization (Acc)")] 
      // [Appearance("fCustomerauthorization1", Enabled = true)]
      // [Appearance("fCustomerauthorization1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -316,7 +316,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private fCountry _country1; 
-     [XafDisplayName("Country (Bill)"), ToolTip("Country (Bill)")] 
+     [XafDisplayName("Country"), ToolTip("Country ")] 
      // [Appearance("fCustomercountry1", Enabled = true)]
      // [Appearance("fCustomercountry1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -403,7 +403,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private string _name1; 
-     [XafDisplayName("Name (Bill)"), ToolTip("Name (Bill)")] 
+     [XafDisplayName("Name "), ToolTip("Name ")] 
      // [Appearance("fCustomername1", Enabled = true)]
      // [Appearance("fCustomername1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -505,7 +505,7 @@ namespace cetho.Module.BusinessObjects
      // Billing Documents
      // Notes for fCustomer : 
      private string _termpayt; 
-     [XafDisplayName("Terms of Payment (Bill)"), ToolTip("Terms of Payment (Bill)")] 
+     [XafDisplayName("Terms of Payment "), ToolTip("Terms of Payment ")] 
      // [Appearance("fCustomertermpayt", Enabled = true)]
      // [Appearance("fCustomertermpaytVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -683,7 +683,7 @@ namespace cetho.Module.BusinessObjects
      // Reference
      // Notes for fCustomer : 
      private fCompany _compcode; 
-     [XafDisplayName("Company Code (Ref)"), ToolTip("Company Code (Ref)")] 
+     [XafDisplayName("Company Code "), ToolTip("Company Code ")] 
      // [Appearance("fCustomercompcode", Enabled = true)]
      // [Appearance("fCustomercompcodeVisiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -697,7 +697,7 @@ namespace cetho.Module.BusinessObjects
      // Reference
      // Notes for fCustomer : 
      private fCustomer _customer1; 
-     [XafDisplayName("Customer (Ref)"), ToolTip("Customer (Ref)")] 
+     [XafDisplayName("Customer "), ToolTip("Customer ")] 
      // [Appearance("fCustomercustomer1", Enabled = true)]
      // [Appearance("fCustomercustomer1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -711,7 +711,7 @@ namespace cetho.Module.BusinessObjects
      // Reference
      // Notes for fCustomer : 
      private string _distributionchannel1; 
-     [XafDisplayName("Distribution Channel (Ref)"), ToolTip("Distribution Channel (Ref)")] 
+     [XafDisplayName("Distribution Channel "), ToolTip("Distribution Channel ")] 
      // [Appearance("fCustomerdistributionchannel1", Enabled = true)]
      // [Appearance("fCustomerdistributionchannel1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -741,7 +741,7 @@ namespace cetho.Module.BusinessObjects
      // Reference
      // Notes for fCustomer : 
      private string _salesorgan1; 
-     [XafDisplayName("Sales Organization (Ref)"), ToolTip("SalesOrganization (Ref)")] 
+     [XafDisplayName("Sales Organization "), ToolTip("SalesOrganization ")] 
      // [Appearance("fCustomersalesorgan1", Enabled = true)]
      // [Appearance("fCustomersalesorgan1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 

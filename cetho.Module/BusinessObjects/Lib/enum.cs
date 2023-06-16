@@ -162,4 +162,42 @@ namespace cetho.Module.BusinessObjects
     {
 
     }
+
+    public enum enumTransaction
+    {
+
+    }
+
+    public enum enumPmntBlock
+    {
+
+    }
+
+    public enum enumStatus
+    {
+
+    }
+
+    public enum enumClassGrp
+    {
+
+    }
+    public enum enumAccAssCat
+    {
+        
+    }
+    public enum enumDistrib
+    {
+
+    }
+
+    public enum enumPartialInv
+    {
+
+    }
+
+    public enum enumQACtrlKey
+    {
+
+    }
 }

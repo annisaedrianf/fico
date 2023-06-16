@@ -445,7 +445,7 @@ namespace cetho.Module.BusinessObjects
      // Communication
      // Notes for fVendor : 
      private string _dataline1; 
-     [XafDisplayName("Data Line (Comm)"), ToolTip("Data line (Comm)")] 
+     [XafDisplayName("Data Line "), ToolTip("Data line (Comm)")] 
      // [Appearance("fVendordataline1", Enabled = true)]
      // [Appearance("fVendordataline1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -549,7 +549,7 @@ namespace cetho.Module.BusinessObjects
      // Communication
      // Notes for fVendor : 
      private string _telebox1; 
-     [XafDisplayName("Telebox (Com)"), ToolTip("Telebox (Com)")] 
+     [XafDisplayName("Telebox"), ToolTip("Telebox (Com)")] 
      // [Appearance("fVendortelebox1", Enabled = true)]
      // [Appearance("fVendortelebox1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -1022,7 +1022,7 @@ namespace cetho.Module.BusinessObjects
      // Payment data
      // Notes for fVendor : 
      private string _tolerancegroup1; 
-     [XafDisplayName("Tolerance Group (Pymt)"), ToolTip("Tolerance group (Pymt)")] 
+     [XafDisplayName("Tolerance Group"), ToolTip("Tolerance group (Pymt)")] 
      // [Appearance("fVendortolerancegroup1", Enabled = true)]
      // [Appearance("fVendortolerancegroup1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -1231,7 +1231,7 @@ namespace cetho.Module.BusinessObjects
      // Reference
      // Notes for fVendor : 
      private fCompany _compcode1; 
-     [XafDisplayName("Company Code (Ref)"), ToolTip("Company Code (Ref)")] 
+     [XafDisplayName("Company Code "), ToolTip("Company Code ")] 
      // [Appearance("fVendorcompcode1", Enabled = true)]
      // [Appearance("fVendorcompcode1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
@@ -1245,7 +1245,7 @@ namespace cetho.Module.BusinessObjects
      // Reference
      // Notes for fVendor : 
      private string _vendor1; 
-     [XafDisplayName("Vendor (Ref)"), ToolTip("Vendor (Ref)")] 
+     [XafDisplayName("Vendor "), ToolTip("Vendor ")] 
      // [Appearance("fVendorvendor1", Enabled = true)]
      // [Appearance("fVendorvendor1Visiblen ", Visibility = ViewItemVisibility.Hide)] 
      // [ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)] 
